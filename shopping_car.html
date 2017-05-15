@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/modal.css"/>
+</head>
+<body>
+<div class="normal normal_p">
+    <nav>
+        <ul>
+            <li><a href="login.html">[登陆]</a></li>
+            <li><a href="signup.html">[注册有惊喜]</a></li>
+            <li><a href="javascript:void(0);">[手机果园]</a></li>
+            <li><a href="javascript:void(0);"><i></i>400-8089-7869</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo"/>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="user.html">个人中心</a></li>
+            <li class="active"><a href="shopping_car.html">购物车</a></li>
+            <li><a href="classify.html">分类</a></li>
+            <li><a href="gift.html">礼品中心</a></li>
+        </ul>
+        <div class="top_search">
+            <input type="text" name="search" placeholder="芒果" value=""/>
+            <span></span>
+        </div>
+        <div class="menu">
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <div class="main shopping_car">
+        <div class="car tab" data-value="car_tab">
+            <ul class="car_head tab_head">
+                <li class="tab_tittle active" data-value="all_goods">全部商品</li>
+                <li class="tab_tittle" data-value="on_sale_goods">降价商品</li>
+                <li class="tab_tittle" data-value="almost_none_goods">库存紧张</li>
+            </ul>
+            <div class="tab_body" data-value="car_tab">
+                <div class="car_body" data-value="all_goods">
+                    <div class="car_info">
+                        <div class="checkbox" data-value="car_checkbox">
+                            <span></span>
+                            <label><input type="checkbox" value="all" hidden />全选</label>
+                        </div>
+                        <div class="car_info_right right">
+                            <p class="link_btn move_to_collection">
+                                <a href="javascript:void(0);">收藏</a>
+                            </p>
+                            <p class="link_btn clear_unable">
+                                <a href="javascript:void(0);">清除失效商品</a>
+                            </p>
+                            <p class="link_btn remove">
+                                <a href="javascript:void(0);">删除</a>
+                            </p>
+                            <p class="link_btn edit_car car_edit">
+                                <a href="javascript:void(0);" class="car_editing">编辑</a>
+                                <a href="javascript:void(0);" class="car_edit_done">完成</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="car_form">
+                        <ul class="form_head">
+                            <li class="car_info_checked">&nbsp;</li>
+                            <li class="car_goods_info">商品信息</li>
+                            <li class="car_goods_type">规格</li>
+                            <li class="car_goods_price">单价</li>
+                            <li class="car_goods_num">数量</li>
+                            <li class="car_goods_total">总价</li>
+                            <li class="car_goods_operate">操作</li>
+                        </ul>
+                        <ul class="car_list">
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                               <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                            <li>
+                                <div class="car_info_checked checkbox" data-value="car_checkbox">
+                                    <span></span>
+                                    <input type="checkbox" value="0" hidden/>
+                                </div>
+                                <div class="car_goods_info list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="car_edit list_goods_describe">
+                                    新到猕猴桃，美味可口，鲜美多汁.....
+                                </div>
+                                <div class="car_list_li_right">
+                                    <span class="car_goods_type">箱</span>
+                                    <span class="car_goods_price">¥15.6</span>
+                                    <div class="car_goods_num goods_num">
+                                        <p class="true_num car_edit">X&nbsp;88</p>
+                                        <div class="choose_num">
+                                            <span class="change reduce" data-value="reduce">-</span>
+                                            <span class="real_num">9</span>
+                                            <span class="change add" data-value="add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car_goods_total">¥93.6</div>
+                                <div class="car_goods_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                                <a href="javascript:void(0);" class="single_done">完成</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="car_body" data-value="on_sale_goods">
+                    <ul class="car_info">
+                        <li>
+                            <div class="checkbox">
+                                <span></span>
+                                <label><input type="checkbox" value="all" hidden/>全选</label>
+                            </div>
+                        </li>
+                        <li class="link_btn move_to_collection">
+                            <a href="javascript:void(0);">移入收藏夹</a>
+                        </li>
+                        <li class="link_btn clear_unable">
+                            <a href="javascript:void(0);">清除失效商品</a>
+                        </li>
+                        <li class="link_btn remove">
+                            <a href="javascript:void(0);">删除</a>
+                        </li>
+                        <li class="link_btn edit_car">
+                            <a href="javascript:void(0);">编辑</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="car_body" data-value="almost_none_goods">
+                    <div class="car_form">
+                        <ul class="big_screen form_head">
+                            <li>商品信息</li>
+                            <li>规格</li>
+                            <li>单价</li>
+                            <li>数量</li>
+                            <li>总价</li>
+                            <li>操作</li>
+                        </ul>
+
+                        <ul class="car_list">
+                            <li>
+                                <div class="list_goods_detail">
+                                    <div class="list_img"><a href="goods_list.html"><img src="img/kiwi.jpg" alt="商品图片"></a>
+                                    </div>
+                                    <p class="list_goods_describe">
+                                        新到猕猴桃，美味可口，鲜美多汁.....
+                                    </p>
+                                </div>
+                                <div class="type">箱</div>
+                                <div class="price">¥15.6</div>
+                                <div class="num">
+                                    <span class="little_screen real_num">6</span>
+                                    <div class="big_screen">
+                                        <span class="reduce">-</span>
+                                        <span class="real_num">6</span>
+                                        <span class="add">+</span>
+                                    </div>
+                                </div>
+                                <div class="cost">¥93.6</div>
+                                <div class="big_screen car_list_operate">
+                                    <p class="link_btn move_to_collection"><a href="javascript:void(0);">移入收藏夹</a></p>
+                                    <p class="link_btn remove_from_car"><a href="javascript:void(0);">删除</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="car_operate">
+            <div class="checkbox" data-value="car_checkbox">
+                <span></span>
+                <label><input type="checkbox" value="all" hidden/>全选</label>
+            </div>
+            <div class="car_cost">
+                <span>已选&nbsp;<span class="text_orange sum_num">1</span>&nbsp;件商品</span>
+                <span>合计(不含运费)：<span class="text_orange sum_cost">¥35</span></span>
+                <span class="bg_orange go_pay"><a href="settlement.html">去结算</a></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="foot_bottom_simple">
+        <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
+    </div>
+</div>
+
+<div class="myModal car_warning">
+    <div class="myModal_body comfire">
+        <span>请选择一个商品</span>
+        <a href="javascript:void(0);" class="btn btn_normal btn_orange">确认</a>
+    </div>
+</div>
+<script type="text/javascript" src="src/jquery.min.js"></script>
+<script type="text/javascript" src="src/common.js"></script>
+<script>
+</script>
+</body>
+</html>

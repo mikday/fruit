@@ -1,0 +1,101 @@
+.myModal {
+    position: absolute;
+    display: none;
+    width:100%;
+    height:100%;
+    top: 0;
+    bottom:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.myModal_body {
+    background: #fff;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+.option {
+    height: 240px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+}
+
+.option > .option-text {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.option > .option-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.option > .option-btn > .btn {
+    display: inline-block;
+    width: 80px;
+}
+
+.success {
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+
+}
+
+.success > .success_img_o {
+    height: 160px;
+    width: 100%;
+    background: #fff url("../img/success_o.png") center center no-repeat;
+    background-size: 80px;
+}
+
+.success > p {
+    height: 40px;
+    width: 100%;
+    font-size:24px;
+    font-weight: 300;
+    line-height:40px;
+    text-align: center;
+}
+
+.myModal_body.article{
+    height:auto;
+    width:80%;
+    margin:0 auto;
+    background:#fff;
+    border-radius:3px;
+    -webkit-box-shadow:  0 0 10px rgba(200,200,200,0.8);
+    -moz-box-shadow:  0 0 10px rgba(200,200,200,0.8);
+    box-shadow:  0 0 10px rgba(200,200,200,0.8);
+    
+}
+
+.long{
+    overflow-y : scroll;
+    padding : 20px 0;
+    box-sizing : border-box
+}
+
+.comfire{
+    width:80%;
+    max-width:400px;
+    height:200px;
+}
+.comfire > span{
+    display:block;
+    height:160px;
+    line-height:160px;
+    text-align:center;
+    font-size:24px;
+}
+
+.comfire > .btn{
+    height:40px;
+    line-height:40px;
+}

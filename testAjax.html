@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>搜索结果</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/checkbox.css"/>
+    <link rel="stylesheet" type="text/css" href="style/4.2.0/css/font-awesome.min.css"/>
+</head>
+<body>
+<div class="normal normal_p goods_list">
+    <nav>
+        <ul>
+            <li><a href="login.html">[登陆]</a></li>
+            <li><a href="signup.html">[注册有惊喜]</a></li>
+            <li><a href="javascript:void(0);">[手机果园]</a></li>
+            <li><a href="javascript:void(0);"><i></i>400-8089-7869</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo"/>
+        </div>
+        <ul class="nav">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="user.html">个人中心</a></li>
+            <li><a href="shopping_car.html">购物车</a></li>
+            <li><a href="classify.html">分类</a></li>
+            <li><a href="gift.html">礼品中心</a></li>
+            <li><a href="card_voucher.html">卡券兑换</a></li>
+        </ul>
+
+        <div class="top_search">
+            <input type="text" name="search" placeholder="芒果" value=""/>
+            <span></span>
+        </div>
+
+        <div class="menu">
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+    <div class="content main">
+        <div class="block_content">
+            <div class="index_tittle">
+                <div class="slided_down_menu sorting">
+                    <div class="text">
+                        <input type="hidden"/>
+                        <span class="tet">排序</span>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                    <ul>
+                        <li data-value="1">综合排序</li>
+                        <li data-value="2">价格由高到低</li>
+                        <li data-value="3">价格由低到高</li>
+                        <li data-value="4">销量由低到高</li>
+                        <li data-value="4">销量由高到底</li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <p><span class="fa fa-filter"></span><span>筛选</span></p>
+                    <div class="filter_body">
+                        <div class="filter_body_block">
+                            <p class="filter_tittle">种类</p>
+                            <div class="type"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other_search">
+                    <input type="text" name="search" placeholder="芒果" value=""/>
+                    <span class="fa fa-search"></span>
+                </div>
+            </div>
+            <div class="show_img">
+                <ul class="fruit_images most">
+                </ul>
+            </div>
+            <div class="leaf leaf16"></div>
+        </div>
+        <div class="pages">
+            <ul>
+                <li class="pre">
+                    <a href="javascript:void(0)">
+                        <span class="fa fa-angle-left"></span>
+                        <span>上一页</span>
+                    </a>
+                </li>
+                <li class="next">
+                    <a href="javascript:void(0);">
+                        <span>下一页</span>
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </li>
+                <li class="sum">
+                    <span class="now">2</span>
+                    <span class="split">/</span>
+                    <span class="total">3</span>
+                </li>
+                <li class="go">
+                    <input type="text" placeholder="2" value=""/>
+                    <a href="javascript:void(0);">go</a>
+                </li>
+            </ul>
+        </div>
+        <!-- leaf bg -->
+        <div class="leaf leaf17"></div>
+        <div class="leaf leaf18"></div>
+
+    </div>
+    <div class="foot_bottom_simple">
+        <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
+    </div>
+</div>
+<script type="text/javascript" src="src/jquery.min.js"></script>
+<script type="text/javascript" src="src/common.js"></script>
+<script type="text/javascript" src="src/jQuery.checkBox.js"></script>
+<script>
+    $(function () {
+        var type = $('.type');
+        type.CheckBox({text: ['红富士', '黄元帅', '红星'], value: [1, 2, 3], isNum: false});
+
+        function fruit(fruitImgW,callback) {
+
+            function loginSignLocation(fruit_img_w) {
+                var fruitImg_w = fruit_img_w || fruitImgW;
+
+                var fruitUl = $('.fruit_images');
+                var fruitLi = fruitUl.find('li');
+
+                var fruitImg = fruitLi.find('.fruit_img');
+
+                fruitImg.css({'height': fruitImg_w + "px"});
+
+                var fruitPic = fruitUl.find('li').find('.fruit_img>img');
+                var fruitPicH = fruitPic.height();
+
+                fruitPic.css({'margin-top': (fruitImg_w - fruitPicH) / 2 + "px"});
+                console.debug('fruitLi.outerHeight(true) * 4 = ' + fruitLi.outerHeight(true) * 4);
+                console.debug('fruitLi.outerHeight(true) = ' + fruitLi.outerHeight(true));
+                //pages
+                if (fruitUl.outerHeight() > fruitLi.outerHeight(true) * 4) {
+                    fruitUl.css({'height': fruitLi.outerHeight(true) * 4 + 'px'});
+                    console.debug('fruitUl.height() = ' + fruitUl.height());
+
+                    $('.normal_p .pages').show();
+
+                } else {
+                    fruitUl.css({'height': 'auto'});
+                    $('.normal_p .pages').hide();
+                }
+                var main_height = $('.main').height();
+                callback && callback(main_height);
+            }
+            loginSignLocation();
+            $(window).resize(function () {
+                var FruitImgW = $('.fruit_img').width();
+                loginSignLocation(FruitImgW);
+            });
+
+        }
+
+        function mainHeight(main_height) {
+            console.debug('main_height1 = ' + main_height);
+
+            function height(mainHeight){
+                console.debug('main_height2 = ' + main_height);
+
+                var w_height = $(window).height();
+                var top_height = $('.top').height();
+                var footerH = $('.foot_bottom_simple').height();
+                var navH;
+
+                if ($('nav').is(":visible")) {
+                    navH = $('nav').height();
+                } else {
+                    navH = 0;
+                }
+                /*  main 页面长度 */
+
+                $('.normal').css({"height": main_height + top_height + footerH + navH + "px"});
+
+                var normalH = $('.normal').height();
+
+                if (normalH < w_height) {
+                    $('.normal').css({"height": 100 + "%"});
+                    return;
+                }
+
+                console.debug('normalH = ' + normalH);
+            }
+            height(main_height);
+
+            $(window).resize(function(){
+                height(main_height);
+            });
+        }
+
+        function loadFruitList(fruit,main) {
+            var target = $('.fruit_images');//ul
+            $.ajax({
+                type: 'get',
+                url: 'testdata.json',
+                dataType: 'json',
+                success: function (data) {
+                    $.each(data.content, function (index, param) {
+                        var li = $('<li></li>');
+                        var a = $('<a href="goods_detail.html"></a>');
+                        var div1 = $('<div class="fruit_img"><img src="' + param.src + '" alt="img"/></div>');
+                        var div2 = $('<div class="fruit_span"><p class="fruit_name">柠檬</p><p class="fruit_price text_orange">' + param.price + '<small>' + param.type + '</small></p></div>');
+                        a.append(div1);
+                        a.append(div2);
+                        li.append(a);
+                        target.append(li);
+                    });
+                    var fruitImgW = target.find('li').width();
+
+                    fruit && fruit(fruitImgW,main);
+                    //pages && pages(arguments);
+                }
+            });
+        }
+
+        loadFruitList(fruit, mainHeight);
+    })
+</script>
+</body>
+</html>

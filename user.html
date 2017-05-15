@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>用户中心</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/modal.css"/>
+    <link rel="stylesheet" type="text/css" href="style/tooltips.css"/>
+    <link rel="stylesheet" type="text/css" href="style/4.2.0/css/font-awesome.min.css"/>
+    <style type="text/css">
+        #demo{ margin:50px auto; width:540px; min-height:800px; background:#CF9}
+    </style>
+
+</head>
+<body>
+<div class="normal user">
+    <nav>
+        <ul>
+            <li><a href="login.html">[登陆]</a></li>
+            <li><a href="signup.html">[注册有惊喜]</a></li>
+            <li><a href="javascript:void(0);">[手机果园]</a></li>
+            <li><a href="javascript:void(0);"><i></i>400-8089-7869</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo"/>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="user.html">个人中心</a></li>
+            <li><a href="shopping_car.html">购物车</a></li>
+            <li><a href="classify.html">分类</a></li>
+            <li><a href="gift.html">礼品中心</a></li>
+            <li><a href="card_voucher.html">卡券兑换</a></li>
+        </ul>
+        <div class="top_search">
+            <input type="text" name="search" placeholder="芒果" value=""/>
+            <span></span>
+        </div>
+        <div class="menu">
+            <a href="javascript:void(0);"></a>
+        </div>
+    </div>
+    <div class="main tab user_plat" data-value="user_menu">
+        <div class="menu_toggle">
+            <a class="menu_on"></a>
+        </div>
+        <ul class="left_menu tab_head">
+            <a class="menu_off"></a>
+            <div class="user_pic">
+                <div class="user_img">
+                    <img src="img/user_img.jpeg" alt=""/>
+                </div>
+                <p class="user_id">ID:898766555</p>
+            </div>
+            <li class="tab_tittle" data-value="user_info">基本信息</li>
+            <li class="tab_tittle" data-value="my_order">我的订单</li>
+            <li class="tab_tittle" data-value="message">消息中心</li>
+            <li class="tab_tittle" data-value="security">安全中心</li>
+            <li class="tab_tittle" data-value="myAddress">我的地址</li>
+            <li class="tab_tittle" data-value="myTest">我的试吃</li>
+            <li class="tab_tittle" data-value="myComment">我的评价</li>
+            <li class="tab_tittle" data-value="myIntegral">积分中心</li>
+            <li class="tab_tittle" data-value="myCollection">我的收藏</li>
+        </ul>
+        <div class="right_content tab_body" data-value="user_menu">
+            <div class="base_info" data-value="user_info">
+                <div class="first_view">
+                    <div class="user_base_top">
+                        <div class="user_img">
+                            <img src="img/user_img.jpeg" alt=""/>
+                        </div>
+                        <span class="change_user_img link_btn">
+                    <a href="javascript:void(0);"><span></span><span>修改头像</span></a>
+                </span>
+                        <span>lv1</span>
+                        <span>182****3864</span>
+                        <span>积分：289</span>
+                    </div>
+                    <div class="user_base_body edit_body view">
+                    <span class="link_btn">
+                        <a href="javascript:void(0);" class="edit right view">
+                            <div class="view_info">
+                                <span></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="edit_info">
+                                <span></span>
+                                <span>完成</span>
+                            </div>
+                        </a>
+                    </span>
+                        <div class="user_info">
+                            <form>
+                                <div class="input_group">
+                                    <span>昵称：</span>
+                                    <span class="view_info">爱吃猫猫的鱼</span>
+                                    <input class="edit_info" type="text" value="" placeholder="爱吃猫的鱼"/>
+                                </div>
+                                <div class="input_group">
+                                    <span>性别：</span>
+                                    <span class="view_info">女</span>
+                                    <div class="radio_groups edit_info">
+                                        <div class="radio_group">
+                                            <div class="radio">
+                                                <span></span>
+                                                <input type="radio" value="girl" name="sex" hidden/>
+                                            </div>
+                                            <span>女</span>
+                                        </div>
+                                        <div class="radio_group">
+                                            <div class="radio">
+                                                <span></span>
+                                                <input type="radio" value="girl" name="sex" hidden/>
+                                            </div>
+                                            <span>男</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <span>生日：</span>
+                                    <span class="view_info">1993-07-17</span>
+                                    <input class="edit_info" type="text" value="" placeholder="爱吃猫的鱼"/>
+                                </div>
+                                <div class="input_group">
+                                    <span>手机：</span>
+                                    <span class="view_info">187647586779</span>
+                                    <input class="edit_info" type="text" value="" placeholder="爱吃猫的鱼"/>
+                                </div>
+                                <div class="input_group">
+                                    <span>邮箱：</span>
+                                    <span class="view_info">89745363570@qq.com</span>
+                                    <input class="edit_info" type="text" value="" placeholder="爱吃猫的鱼"/>
+                                </div>
+                                <div class="btn_group edit_info">
+                                    <a href="javascript:void(0)" class="btn btn_normal edit_cancel">取消</a>
+                                    <a href="javascript:void(0)" class="btn btn_orange btn_normal send">提交</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer_prints">
+                        <p class="page_tittle"><span>最近浏览</span></p>
+                        <div class="img_list roll_img">
+                            <div class="left_angle disable"><span></span></div>
+                            <div class="roll_body footer_print">
+                                <ul class="fruit_images">
+                                    <li>
+                                        <a href="goods_detail.html">
+                                            <div class="fruit_img">
+                                                <img src="img/lemon.jpg" alt="水果照片"/>
+                                            </div>
+                                            <div class="fruit_span">
+                                                <p class="fruit_name">柠檬</p>
+                                                <p class="fruit_price text_orange">¥5.67
+                                                    <small>/500g</small>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li><!--
+                --><li><a href="goods_detail.html">
+                                    <div class="fruit_img">
+                                        <img src="img/lemon.jpg" alt="水果照片"/>
+                                    </div>
+                                    <div class="fruit_span">
+                                        <p class="fruit_name">柠檬</p>
+                                        <p class="fruit_price text_orange">¥5.67
+                                            <small>/500g</small>
+                                        </p>
+                                    </div>
+                                </a></li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li><!--
+                --><li>
+                                    <a href="goods_detail.html">
+                                        <div class="fruit_img">
+                                            <img src="img/lemon.jpg" alt="水果照片"/>
+                                        </div>
+                                        <div class="fruit_span">
+                                            <p class="fruit_name">柠檬</p>
+                                            <p class="fruit_price text_orange">¥5.67
+                                                <small>/500g</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="right_angle"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit_head_tab">
+                    <div class="old_head_pic">
+                        <div class="head_pic">
+                            <img src="img/user_img.jpeg" alt="原头像" />
+                        </div>
+                        <span>原头像</span>
+                    </div>
+                    <div class="upload_pic">
+                        <div class="upload_box">上传图片</div>
+                        <div class="btn_group">
+                            <a href="javascript:void(0)" class="btn btn_normal cancle_edit_head">取消</a>
+                            <a href="javascript:void(0)" class="btn btn_normal btn_orange">确定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-value="my_order" class="my_order inline_tab tab">
+                <ul class="tab_head">
+                    <li class="tab_tittle" data-value="all_order">全部订单</li>
+                    <li class="tab_tittle" data-value="undone_order">未完成订单</li>
+                    <li class="tab_tittle" data-value="cancle_order">已撤销订单</li>
+                    <li class="tab_tittle" data-value="rights_order">维权订单</li>
+                </ul>
+                <div class="tab_body" data-value="my_order">
+                    <div data-value="all_order" class="li_pages">
+                        <ul class="my_order_list page_li">
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn rights_jindu"><a href="javascript:void(0);">售后处理中</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>待评论</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);" class="go_to_comment">去评论</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_bt  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>已发货</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li class="link_btn"><a href="logistics.html">查看物流</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pages">
+                            <ul>
+                                <li class="pre">
+                                    <a href="javascript:void(0)">
+                                        <span class="fa fa-angle-left"></span>
+                                        <span>上一页</span>
+                                    </a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:void(0);">
+                                        <span>下一页</span>
+                                        <span class="fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                                <li class="sum">
+                                    <span class="now">2</span>
+                                    <span class="split">/</span>
+                                    <span class="total">3</span>
+                                </li>
+                                <li class="go">
+                                    <input type="text" placeholder="2" value=""/>
+                                    <a href="javascript:void(0);">go</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-value="undone_order" class="li_pages">
+                        <ul class="my_order_list page_li">
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>待评论</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);" class="go_to_comment">去评论</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_bt  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>已发货</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li class="link_btn"><a href="logistics.html">查看物流</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pages">
+                            <ul>
+                                <li class="pre">
+                                    <a href="javascript:void(0)">
+                                        <span class="fa fa-angle-left"></span>
+                                        <span>上一页</span>
+                                    </a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:void(0);">
+                                        <span>下一页</span>
+                                        <span class="fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                                <li class="sum">
+                                    <span class="now">2</span>
+                                    <span class="split">/</span>
+                                    <span class="total">3</span>
+                                </li>
+                                <li class="go">
+                                    <input type="text" placeholder="2" value=""/>
+                                    <a href="javascript:void(0);">go</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-value="cancle_order" class="li_pages">
+                        <ul class="my_order_list page_li">
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>待评论</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);" class="go_to_comment">去评论</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_bt  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>已发货</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li class="link_btn"><a href="logistics.html">查看物流</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pages">
+                            <ul>
+                                <li class="pre">
+                                    <a href="javascript:void(0)">
+                                        <span class="fa fa-angle-left"></span>
+                                        <span>上一页</span>
+                                    </a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:void(0);">
+                                        <span>下一页</span>
+                                        <span class="fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                                <li class="sum">
+                                    <span class="now">2</span>
+                                    <span class="split">/</span>
+                                    <span class="total">3</span>
+                                </li>
+                                <li class="go">
+                                    <input type="text" placeholder="2" value=""/>
+                                    <a href="javascript:void(0);">go</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-value="rights_order" class="li_pages">
+                        <ul class="my_order_list page_li">
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>待评论</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);" class="go_to_comment">去评论</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_bt  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>已发货</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li class="link_btn"><a href="logistics.html">查看物流</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn  apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <span class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </span>
+                                        <span class="order_right">
+                                            <div class="goods_price">¥21.00</div>
+                                            <div class="goods_number">x6</div>
+                                        </span>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_top">
+                                    <p class="left">
+                                        <span>订单号：0989898765</span>
+                                        <span>下单时间：2017-05-02</span>
+                                    </p>
+                                    <ul class="right">
+                                        <li class="link_btn apply_rights"><a href="javascript:void(0);">申请售后</a></li>
+                                        <li class="link_btn"><a href="javascript:void(0);">删除订单</a></li>
+                                    </ul>
+                                </div>
+                                <div class="order_middle">
+                                    <div class="order_level">
+                                        <div class="goods_des">
+                                            <a href="goods_detail.html">
+                                                <div class="goods_img">
+                                                    <img src="img/carambola.jpg" alt=""/>
+                                                </div>
+                                                <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                                    小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                                    花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                                    浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="order_right">
+                                            <span class="goods_price">¥21.00</span>
+                                            <span class="goods_number">x6</span>
+                                        </div>
+                                    </div>
+                                    <div class="order_status">
+                                        <ul>
+                                            <li>交易已完成</li>
+                                            <li class="link_btn myOrder_detail"><a href="javascript:void(0);">查看订单详情</a></li>
+                                            <li>已评价</li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_operate link_btn">
+                                        <a href="javascript:void(0);">确认收货</a>
+                                    </div>
+                                </div>
+                                <div class="order_bottom">
+                                    <p class="left">
+                                        <span>淘金币抵扣：¥2.2</span>
+                                        <span>积分抵扣：¥0.8</span>
+                                    </p>
+                                    <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pages">
+                            <ul>
+                                <li class="pre">
+                                    <a href="javascript:void(0)">
+                                        <span class="fa fa-angle-left"></span>
+                                        <span>上一页</span>
+                                    </a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:void(0);">
+                                        <span>下一页</span>
+                                        <span class="fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                                <li class="sum">
+                                    <span class="now">2</span>
+                                    <span class="split">/</span>
+                                    <span class="total">3</span>
+                                </li>
+                                <li class="go">
+                                    <input type="text" placeholder="2" value=""/>
+                                    <a href="javascript:void(0);">go</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-value="message" class="li_pages">
+                <ul class="my_message_list page_li">
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view_pic">
+                            <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                        </div>
+                        <div class="message_text">
+                            <p class="message_word">
+                                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                                你的菜单上。
+                            </p>
+                            <p class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="view_pic">
+                        <img src="img/fruit_pay.jpg" alt="缩略图"/>
+                    </div>
+                    <div class="message_text">
+                        <p class="message_word">
+                            什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                            这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                            这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                            你的菜单上。
+                        </p>
+                        <p class="btn_group">
+                            <a href="javascript:void(0)" class="btn btn_normal showModel" data-value="message_detail">查看</a>
+                            <a href="javascript:void(0)" class="btn btn_normal btn_orange">删除</a>
+                        </p>
+                    </div>
+                </li>
+                </ul>
+                <div class="pages">
+                    <ul>
+                        <li class="pre">
+                            <a href="javascript:void(0)">
+                                <span class="fa fa-angle-left"></span>
+                                <span>上一页</span>
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="javascript:void(0);">
+                                <span>下一页</span>
+                                <span class="fa fa-angle-right"></span>
+                            </a>
+                        </li>
+                        <li class="sum">
+                            <span class="now">2</span>
+                            <span class="split">/</span>
+                            <span class="total">3</span>
+                        </li>
+                        <li class="go">
+                            <input type="text" placeholder="2" value=""/>
+                            <a href="javascript:void(0);">go</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-value="security" class="security inline_tab tab">
+                <ul class="tab_head">
+                    <li class="tab_tittle" data-value="password">密码</li>
+                    <li class="tab_tittle" data-value="phone">修改手机号</li>
+                </ul>
+                <div class="tab_body" data-value="security">
+                    <div class="change_password" data-value="password">
+                        <form>
+                            <div class="input_group_line">
+                                <span>新密码：</span>
+                                <input type="text" placeholder="" value=""/>
+                            </div>
+                            <div class="input_group_line">
+                                <span>再次确认密码：</span>
+                                <input type="text" placeholder="" value=""/>
+                            </div>
+                            <div class="input_group_line_btn">
+                                <span>验证码：</span>
+                                <input type="text" placeholder="" value=""/>
+                                <span class="btn btn_normal btn_orange">发送验证码</span>
+                            </div>
+                            <div class="btn_group">
+                                <a href="javascript:void(0)" class="btn btn_normal">取消</a>
+                                <a href="javascript:void(0)" class="btn btn_normal btn_orange">确认</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="change_phone" data-value="phone">
+                        <ul>
+                            <li id="changePhone1" class="changePhone1">
+                                <form>
+                                    <div class="input_group_line">
+                                        <span>原手机号：</span>
+                                        <input type="text" placeholder="" value=""/>
+                                    </div>
+                                    <div class="input_group_line_btn">
+                                        <span>验证码：</span>
+                                        <input type="text" placeholder="" value=""/>
+                                        <span class="btn btn_normal btn_orange">发送验证码</span>
+                                    </div>
+                                    <div class="btn_group">
+                                        <a href="javascript:void(0);" class="btn btn_normal">取消</a>
+                                        <a href="#changePhone2" class="btn btn_normal btn_orange">下一步</a>
+                                    </div>
+                                </form>
+                            </li>
+                            <li id="changePhone2" class="changePhone2">
+                                <form>
+                                    <div class="input_group_line">
+                                        <span>新手机号：</span>
+                                        <input type="text" placeholder="" value=""/>
+                                    </div>
+                                    <div class="input_group_line_btn">
+                                        <span>验证码：</span>
+                                        <input type="text" placeholder="" value=""/>
+                                        <span class="btn btn_normal btn_orange">发送验证码</span>
+                                    </div>
+                                    <div class="btn_group">
+                                        <a href="#changePhone1" class="btn btn_normal">上一步</a>
+                                        <a href="javascript:void(0);" class="btn btn_normal btn_orange">完成</a>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-value="myAddress">
+            </div>
+            <div data-value="myTest">
+                <p class="page_tittle"><span>我的试吃</span></p>
+                <div class="myTest_content">
+                    <ul class="myTest_head">
+                        <li class="test-goods">商品</li>
+                        <li class="apply_data">申请时间</li>
+                        <li class="test_status">状态</li>
+                        <li class="test-comment">评价</li>
+                    </ul>
+                    <ul class="myTest_list">
+                        <li>
+                            <a href="goods_detail.html">
+                                <div>
+                                    <div class="test-goods">
+                                        <div class="img">
+                                            <img src="img/grapes.jpg" alt=""/>
+                                        </div>
+                                        <p>
+                                            较真地说，物质的形态用于界定纯净物更为合适，纯净物的形态可以互相转换，
+                                            界定混合物比较困难。比方说，同样是面粉和水，面多水少就是面团，水多面
+                                            少就是面糊，面粉机+水到底是固体还是液体？再做个西湖牛肉羹，稀中带干，
+                                            汤中带肉，咋算？
+                                        </p>
+                                    </div>
+                                    <span class="apply_data">2016-09-12</span>
+                                    <span class="test_status">
+                                        <span class="has_commented">已评价</span>
+                                    </span>
+                                    <div class="test-comment">
+                                        <div class="has_commented">
+                                            <ul>
+                                                <li>
+                                                    <span>综合评价：</span>
+                                                    <ul>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>甜度：</span>
+                                                    <ul>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                        <li><span></span></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <a href="javascript:void(0);" class="go_to_comment">追评</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods_detail.html">
+                                <div>
+                                    <div class="test-goods">
+                                        <div class="img">
+                                            <img src="img/grapes.jpg" alt=""/>
+                                        </div>
+                                        <p>
+                                            较真地说，物质的形态用于界定纯净物更为合适，纯净物的形态可以互相转换，
+                                            界定混合物比较困难。比方说，同样是面粉和水，面多水少就是面团，水多面
+                                            少就是面糊，面粉机+水到底是固体还是液体？再做个西湖牛肉羹，稀中带干，
+                                            汤中带肉，咋算？
+                                        </p>
+                                    </div>
+                                    <span class="apply_data">2016-09-12</span>
+                                    <span class="test_status">
+                                        <ul class="no_arrival">
+                                            <li>待收货</li>
+                                            <li class="link_btn"><a href="logis">查看物流</a></li>
+                                            <li class="link_btn"><a href="javascript:void(0)">确认收货</a></li>
+                                        </ul>
+                                    </span>
+                                    <div class="test-comment">
+                                        <ul class="no_arrival">
+                                            <li>
+                                                <span>综合评价：</span>
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>甜度：</span>
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods_detail.html">
+                                <div>
+                                    <div class="test-goods">
+                                        <div class="img">
+                                            <img src="img/grapes.jpg" alt=""/>
+                                        </div>
+                                        <p>
+                                            较真地说，物质的形态用于界定纯净物更为合适，纯净物的形态可以互相转换，
+                                            界定混合物比较困难。比方说，同样是面粉和水，面多水少就是面团，水多面
+                                            少就是面糊，面粉机+水到底是固体还是液体？再做个西湖牛肉羹，稀中带干，
+                                            汤中带肉，咋算？
+                                        </p>
+                                    </div>
+                                    <span class="apply_data">2016-09-12</span>
+                                    <span class="test_status">
+                                        <span class="has_commented">已评价</span>
+                                    </span>
+                                    <div class="test-comment">
+                                        <ul class="has_commented">
+                                            <li>
+                                                <span>综合评价：</span>
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>甜度：</span>
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-value="myComment" class="myComment">
+            </div>
+            <div data-value="myIntegral">
+            </div>
+            <div data-value="myCollection">
+
+            </div>
+            <!--  非正常切换  -->
+            <!--  订单详情  -->
+            <div class="my_order_detail">
+                <p class="page_tittle"><span>订单详情</span></p>
+                <div class="order_detail_content">
+                    <ul class="order_detail_content_add">
+                        <li>收件人：李梅梅</li>
+                        <li>联系电话：18789876754</li>
+                        <li>订单状态：已评价</li>
+                        <li>地址：四川省德阳市旌阳区</li>
+                        <li>发货方式：韵达快递</li>
+                    </ul>
+                    <ul class="order_detail_content_time">
+                        <li>
+                            <span>创建时间：</span><span>2017-08-13&nbsp;&nbsp;&nbsp;&nbsp;18:56:29</span>
+
+                        </li>
+                        <li>
+                            <span>付款时间：</span><span>2017-08-13&nbsp;&nbsp;&nbsp;&nbsp;18:56:29</span>
+
+                        </li>
+                        <li>
+                            <span>成交时间：</span><span>2017-08-13&nbsp;&nbsp;&nbsp;&nbsp;18:56:29</span>
+
+                        </li>
+                        <li>
+                            <span>签收时间：</span><span>2017-08-13&nbsp;&nbsp;&nbsp;&nbsp;18:56:29</span>
+                        </li>
+                    </ul>
+                    <div class="order_detail_content_order">
+                        <a href="goods_detail.html">
+                            <div class="order_top">
+                                <p class="left">
+                                    <span>订单号：0989898765</span>
+                                    <span>下单时间：2017-05-02</span>
+                                </p>
+                                <ul class="right">
+                                    <li class="link_btn"><a href="javascript:void(0);">申请售后</a></li>
+                                </ul>
+                            </div>
+                            <div class="order_middle">
+                                <div class="goods_img">
+                                    <img src="img/carambola.jpg" alt=""/>
+                                </div>
+                                <div class="order_right">
+                                    <p>阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                        小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                        花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                        浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                                    </p>
+                                    <div class="order_right_bottom">
+                                        <span class="goods_price">¥21.00<small>/500g</small></span>
+                                        <span class="goods_number">x6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_bottom">
+                                <p class="left">
+                                    <span>淘金币抵扣：¥2.2</span>
+                                    <span>积分抵扣：¥0.8</span>
+                                </p>
+                                <p class="right">¥134<small>(含运费：¥10.00)</small></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  申请售后  -->
+            <div class="my_rights">
+                <p class="page_tittle"><span>申请售后</span></p>
+                <div class="my_rights_content">
+                    <div class="my_rights_info">
+                        <div class="rights_order_detail">
+                            <div class="goods_img">
+                                <img src="img/pineapple.jpg" alt=""/>
+                            </div>
+                            <p>
+                                阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                                小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                                花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                                浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                            </p>
+                        </div>
+                        <div class="rights_order_cost">
+                            <div class="order_body">
+                                <span class="price">¥18.5<small>/1kg</small></span>
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="rights_order_sale">
+                            <div class="order_body">
+                                <span>积分抵扣：¥0.15</span>
+                                <span>淘金币抵扣：¥2.03</span>
+                            </div>
+                        </div>
+                        <div class="rights_order_settlement">
+                            <div class="order_body">
+                                <span>共1件商品</span>
+                                <span>¥18.5<small>含运费(¥0.00)</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="fight_type">
+                            <span>维权类型:</span>
+                            <div class="slided_down_menu">
+                                <div class="text">
+                                    <input type="hidden"/>
+                                    <span class="tet">退款</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul>
+                                    <li data-value="1">退款</li>
+                                    <li data-value="2">退款退货</li>
+                                    <li data-value="3">补发</li>
+                                </ul>
+                            </div>
+                            <span class="warning text_orange">* 由于水果特性，仅支持退款、补发 *</span>
+                        </div>
+                        <div class="radio_groups is_arrival">
+                            <span>是否收到货:</span>
+                            <div class="radio_group">
+                                <div class="radio">
+                                    <span></span>
+                                    <input type="radio" value="girl" name="sex" hidden/>
+                                </div>
+                                <span>是</span>
+                            </div>
+                            <div class="radio_group">
+                                <div class="radio">
+                                    <span></span>
+                                    <input type="radio" value="girl" name="sex" hidden/>
+                                </div>
+                                <span>否</span>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <span>原因:</span>
+                            <div class="slided_down_menu">
+                                <div class="text">
+                                    <input type="hidden"/>
+                                    <span class="tet">请选择退款原因</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul>
+                                    <li data-value="1">没收到货</li>
+                                    <li data-value="2">质量太差</li>
+                                    <li data-value="3">发错货</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input_group get_money">
+                            <span>退款金额：</span>
+                            <input class="right_get_pay" type="text" value="" placeholder="¥9.89"/>
+                        </div>
+                        <div class="input_group explain">
+                            <span>说明：</span>
+                            <input class="right_get_pay" type="text" value="" placeholder="不超过200字"/>
+                        </div>
+                        <div class="input_group upload_evident img_upload">
+                            <span>上传凭据：</span>
+                            <label for="file">
+                                <input type="file" name="file" id="file" class="upload_file" value="" accept="image/*" multiple />
+                                <span class="z_file">上传凭据</span>
+                            </label>
+                            <span class="warning text_orange">* 最多只能上传5张图片 *</span>
+                        </div>
+                        <div class="upload_img_view">
+                        </div>
+                        <p class="rights_btn">
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a class="btn btn_normal btn_orange" href="javascript:void(0)">提交申请</a>
+
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+            <!--  评价  -->
+            <div class="comments">
+                <p class="page_tittle"><span>发表评论</span></p>
+                <div class="comment_text">
+                    <div class="comment_text_left">
+                        <div class="img">
+                            <img src="img/apricot.jpg" alt=""/>
+                        </div>
+                        <p>
+                            阳桃为常绿小乔木，高可达12米。羽状复叶互生，由于叶子会对热和光产生反应，受到外力触碰会缓慢闭合，
+                            小叶5-13片，卵形至椭圆形，顶端渐尖，基部圆，一侧歪斜。花小，两性，花枝和花蕾深红色；
+                            花瓣背面淡紫红色，边缘色较淡，有时为粉红色或白色，腋生圆锥花序；花期春末至秋。
+                            浆果卵形至长椭球形，淡绿色或蜡黄色，有时带暗红色。果子成五角星形。
+                        </p>
+                    </div>
+                    <div class="comment_right">
+                        <div class="textarea" contenteditable="true"></div>
+                    </div>
+                </div>
+                <div class="level_comment">
+                    <ul class="comment_level">
+                        <li>
+                            <span>综合评价:</span>
+                            <ul>
+                                <li class="active">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>新鲜度：</span>
+                            <ul>
+                                <li class="active">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>甜度：</span>
+                            <ul>
+                                <li class="active">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input_group img_upload">
+                    <span>上传图片：</span>
+                    <label for="file2">
+                        <input type="file" name="file" id="file2" class="upload_file" value="" accept="image/*" multiple />
+                        <span class="z_file">上传图片</span>
+                    </label>
+                    <span class="warning text_orange">* 最多只能上传5张图片 *</span>
+                </div>
+                <div class="upload_img_view">
+                </div>
+                <div class="push_comment">
+                    <a href="javascript:void(0);" class="btn btn_normal btn_orange">发表评论</a>
+                </div>
+            </div>
+            <!--  售后进程 -->
+            <div class="after_sales">
+                <p class="page_tittle"><span>售后进程</span></p>
+                <div class="after_sales_content">
+                    <ul class="after_sales_info">
+                        <li><span>售后类型：</span><span>仅退款</span></li>
+                        <li><span>货物状态：</span><span>已收到货</span></li>
+                        <li><span>原因：</span><span>没收到货</span></li>
+                        <li><span>退款金额：</span><span>¥89.90</span></li>
+                        <span class="clearfix"></span>
+                    </ul>
+                    <ul class="after_sales_process">
+                        <li>
+                            <div>
+                                <p class="process_status">提交申请成功</p>
+                                <p class="process_time"><span>2017-09-23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18:45:02</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="process_status">平台审核中</p>
+                                <p class="process_time"><span>2017-09-23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18:45:02</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="process_status">审核已通过，正在通知店家</p>
+                            <p class="process_time"><span>2017-09-23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18:45:02</span></p>
+                        </li>
+                        <li>
+                            <p class="process_status">店家已同意申请，退款中</p>
+                            <p class="process_time"><span>2017-09-23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18:45:02</span></p>
+                        </li>
+                        <li>
+                            <p class="process_status">退款成功<span class="pay_back_explain" title="退款说明"></span></p>
+                            <p class="process_time"><span>2017-09-23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>18:45:02</span></p>
+                        </li>
+                        <span class="clearfix"></span>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="foot_bottom_simple">
+        <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
+    </div>
+    <div class="leaf leaf34"></div>
+    <div class="leaf leaf35"></div>
+    <div class="leaf leaf36"></div>
+    <div class="leaf leaf37"></div>
+    <div class="leaf leaf38"></div>
+</div>
+<div class="myModal" data-value="message_detail">
+    <div class="myModal_body article">
+        <div class="message_word_img">
+            <h2>文章标题</h2>
+            <p>
+                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                你的菜单上。
+            </p>
+            <div class="article_img">
+                <img src="img/pineapple.jpg" alt="菠萝"/>
+            </div>
+            <p>
+                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                你的菜单上。
+            </p>
+            <div class="article_img">
+                <img src="img/pineapple.jpg" alt="菠萝"/>
+            </div>
+            <p>
+                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                你的菜单上。
+            </p>
+            <div class="article_img">
+                <img src="img/pineapple.jpg" alt="菠萝"/>
+            </div>
+            <p>
+                什么是“绝食减肥法”？并不是说让你真的从一开始就什么都不吃——那会饿出毛病来的。
+                这个方法的意思是，在你胡吃海喝的间隙，你应当找上几天时间不吃东西。而不吃东西
+                这几天就会让你迅速摆脱自己的肚腩和大粗腿——尽管在其他的日子里薯条和汉堡永远在
+                你的菜单上。
+            </p>
+            <div class="article_time">2012-09-24</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="src/jquery.min.js"></script>
+<script type="text/javascript" src="src/jquery.roll.js"></script>
+<script type="text/javascript" src="src/jQuery.pages.js"></script>
+<script type="text/javascript" src="src/common.js"></script>
+<script type="text/javascript" src="src/createModal.js"></script>
+<script type="text/javascript" src="src/createTips.js"></script>
+<script>
+    $(function(){
+        var number = function () {
+            var Num;
+            var ww = $('.main').width();
+            if (ww >= 1920) {
+                Num = 5;
+            } else if (ww < 1920 && ww >= 1500) {
+                Num = 4;
+            } else if (ww < 1500 && ww >= 1204) {
+                Num = 4;
+            } else if (ww < 1204 && ww >= 900) {
+                Num = 4;
+            } else if (ww < 900 && ww >= 768) {
+                Num = 3;
+            } else if (ww < 768 && ww > 320) {
+                Num = 2;
+            } else if (ww <= 320) {
+                Num = 2;
+            }
+            return Num;
+        }();
+
+        $('.footer_prints .roll_img').roll({num: number, autoPosition: true});
+
+        $('.showModel').MyModal({long:true});
+
+        var box = $('.textarea');
+        if (typeof document.webkitHidden == "undefined") {
+            // 非chrome浏览器阻止粘贴
+            box.onpaste = function() {
+                return false;
+            }
+        }
+
+        var pay_back = $('.pay_back_explain');
+        pay_back.toolTips({'text':"<p>如您已经过了维权处理期无法发起退款申请，建议您联系卖家协商处理哦。</p>" +
+                                "<p>如无法协商一致，建议您提供有效凭证，联系淘宝客服处理</p>" +
+                                "<p>如果您确实操作过付款,退款过程中卖家操作了拒绝，且双方无法协商一致,请致电客服0838—9087768</p>"});
+    });
+
+</script>
+</body>
+
+</html>
