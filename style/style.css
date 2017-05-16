@@ -1156,7 +1156,6 @@ span.phone_error {
     margin-left: 2%;
     margin-bottom: 20px;
     height: auto;
-    overflow: hidden;
 }
 
 .show_img > .fruit_images > li:nth-child(4n+1) {
@@ -1177,11 +1176,6 @@ span.phone_error {
     transition: all 800ms ease;
     overflow: hidden;
 
-}
-
-.fruit_images > li > a > .fruit_img > img {
-    height: 60%;
-    margin: 0 auto;
 }
 
 .fruit_images > li > a > .fruit_span > p {
@@ -3114,7 +3108,6 @@ span.phone_error {
 
 .car_list .list_goods_detail > .list_img > a > img {
     width: 100%;
-    margin-top: 16px;
 }
 
 .car_list .list_goods_describe {
@@ -3274,10 +3267,6 @@ span.phone_error {
         width: 60px;
         height: 60px;
         margin-top: 30px;
-    }
-
-    .car_list .list_goods_detail > .list_img > a > img {
-        margin-top: 9px;
     }
 
     .car_list .list_goods_describe {
@@ -4086,7 +4075,6 @@ span.phone_error {
 
 .img_list .goods_img_list > li {
     width: 120px;
-    height: 80px;
 }
 
 .roll_body > ul > li > a {
@@ -4096,7 +4084,6 @@ span.phone_error {
 }
 
 .img_list .goods_img_list > li > a {
-    height: 80px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -4489,11 +4476,6 @@ span.phone_error {
 
     .img_list .goods_img_list > li {
         width: 102px;
-        height: 68px;
-    }
-
-    .img_list .goods_img_list > li > a {
-        height: 68px;
     }
 
     .img_list .left_angle > span {
@@ -4566,11 +4548,6 @@ span.phone_error {
 
     .img_list .goods_img_list > li {
         width: 81px;
-        height: 54px;
-    }
-
-    .img_list .goods_img_list > li > a {
-        height: 54px;
     }
 
     .img_list .left_angle > span {
@@ -4728,11 +4705,6 @@ span.phone_error {
 
     .img_list .goods_img_list > li {
         width: 150px;
-        height: 100px;
-    }
-
-    .img_list .goods_img_list > li > a {
-        height: 100px;
     }
 
     .img_list .left_angle > span {
@@ -4881,12 +4853,6 @@ span.phone_error {
 
     .img_list .goods_img_list > li {
         width: 90px;
-        height: 60px;
-        padding: 0 3px;
-    }
-
-    .img_list .goods_img_list > li > a {
-        height: 60px;
     }
 
     .img_list .left_angle > span {
@@ -5111,12 +5077,7 @@ span.phone_error {
 
     .img_list .goods_img_list > li {
         width: 75px;
-        height: 50px;
         padding: 0 2px;
-    }
-
-    .img_list .goods_img_list > li > a {
-        height: 50px;
     }
 
     .goods_type, .goods_num {
@@ -6593,11 +6554,6 @@ td.order_info_goods > p {
     box-sizing: border-box;
 }
 
-.order_middle .goods_des > a > .goods_img > img {
-    width: 100%;
-    margin-top: 10px;
-}
-
 .order_middle .goods_des > a > p {
     height: 80px;
     margin: 20px 0 0 110px;
@@ -6699,10 +6655,6 @@ td.order_info_goods > p {
     border: 1px solid #f8bd34;
     overflow: hidden;
     box-sizing: border-box;
-}
-
-.order_detail_content_order .order_middle > .goods_img > img {
-    width: 100%;
 }
 
 .order_detail_content_order .order_right {
@@ -6912,10 +6864,6 @@ li.arrival:before {
     margin: 20px 0 0 10px;
     border: 1px solid #f8bd34;
     border-radius: 3px;
-}
-
-.my_rights_content > .my_rights_info .rights_order_detail .goods_img > img {
-    width: 100%;
 }
 
 .my_rights_content > .my_rights_info .rights_order_detail > p {
@@ -7453,13 +7401,13 @@ label {
 
 @media screen and (max-width: 768px) {
     .inline_tab > ul {
-        height: 30px;
+        height: 40px;
     }
 
     .inline_tab .tab_head > li {
-        height: 30px;
+        height: 40px;
         width: 100px;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 12px;
     }
 
@@ -7726,16 +7674,16 @@ label {
 
 @media screen and (max-width: 480px) {
     .user .right_content.tab_body {
-        padding: 0 5px;
+        padding: 0;
     }
 
     .inline_tab .tab_head > li {
-        height: 30px;
+        height: 40px;
         width: auto;
+        min-width: 60px;
         padding: 0 8px;
-        line-height: 30px;
-        font-size: 10px;
-        -moz-transform: scale(0.84);
+        line-height: 40px;
+        font-size: 12px;
     }
 
     .order_top > .left > span {
@@ -8003,9 +7951,6 @@ label {
         height: 60px;
     }
 
-    .order_middle .goods_des > a > .goods_img > img {
-        width: 100%;
-    }
 
     .order_middle .goods_des > a > p {
         height: 60px;
@@ -8435,6 +8380,35 @@ label {
 }
 
 @media screen and (max-width: 480px) {
+    /*  安全中心 */
+    .change_password > form {
+        width: 360px;
+    }
+
+    .input_group_line {
+        width: 360px;
+        height: 40px;
+    }
+
+    .input_group_line > input, .input_group_line_btn > input {
+        height: 40px;
+        width: 260px;
+        line-height: 40px;
+        padding:10px 5px 0 5px;
+        border: none;
+        border-bottom: 1px solid #f8bd34;
+        box-sizing: border-box;
+    }
+
+    .input_group_line_btn {
+        width: 360px;
+    }
+
+
+    .change_password .btn_group {
+        width: 225px;
+    }
+
     /*  礼物中心 */
     .my_gift {
         width: 360px;

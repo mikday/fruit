@@ -899,3 +899,11 @@ p.page_tittle{
     background:rgba(0,0,0,0.6);
     z-index:2;
 }
+
+.fruit_img > img {
+    width:100%
+}
+
+.goods_img > img {
+    width:100%;
+}

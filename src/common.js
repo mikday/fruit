@@ -5,10 +5,8 @@
 
 $(function () {
     function mainHeight(main_height) {
-        // console.debug('main_height1 = ' + main_height);
 
         function height(mainHeight) {
-            //console.debug('main_height2 = ' + main_height);
 
             var w_height = $(window).height();
             var top_height = $('.top').height();
@@ -43,6 +41,7 @@ $(function () {
         var main_height = $('.main').outerHeight(true);
         mainHeight(main_height);
     }
+
 
 //search
 
@@ -105,26 +104,6 @@ $(function () {
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.edit_address').show();
         setMainHeight();
-    });
-    /*  tab  */
-    $('.tab').each(function () {
-        $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
-        $(this).find('.tab_tittle').click(function () {
-            var $this = $(this),
-                $value = $this.data("value"),
-                $tabVal = $this.closest('.tab').data("value");
-            $this.closest('.tab_head').find('.tab_tittle').removeClass('active');
-            $this.addClass('active');
-            $this.closest('.tab').find('.tab_body[data-value="' + $tabVal + '"]>div').hide();
-            $this.closest('.tab').find('.tab_body[data-value="' + $tabVal + '"]>div[data-value="' + $value + '"]').show();
-            if ($('.li_pages').length > 0) {
-                $('.li_pages').liPages();
-                setMainHeight();
-            }
-            setMainHeight();
-
-
-        });
     });
 
 
@@ -373,30 +352,14 @@ $(function () {
      }
 
      loadFruitList(fruitAjax, mainHeight);*/
-
     //一般时候
     function fruit(callback) {
-        var fruitUl = $('.fruit_images');
-        var fruitLi = fruitUl.find('li');
-        var fruitImg = fruitLi.find('.fruit_img');
-        var fruitPic = fruitUl.find('li').find('.fruit_img img');
-        var fruitPicH = fruitPic.height();
-
-        fruitImg.css({'height': fruitImg.width() + "px"});
-        fruitPic.css({'margin-top': (fruitImg.width() - fruitPicH) / 2 + "px"});
 
         //pages
-        if (fruitUl.length > 0) {
-            console.log(fruitUl);
-            if (fruitUl.outerHeight() > fruitLi.outerHeight(true) * 4) {
-                fruitUl.css({'height': fruitLi.outerHeight(true) * 4 + 'px'});
-                $('.normal_p .pages').show();
-
-            } else {
-                fruitUl.css({'height': 'auto'});
-                $('.normal_p .pages').hide();
-            }
-        } else if ($('.li_pages').length > 0) {
+        if ($('.fruit_ul').is(":visible")) {
+            console.log('.img');
+            $('.fruit_ul').ulHeight();
+        } else if($('.li_pages').is(":visible")){
             console.log('.li');
             $('.li_pages').liPages();
         }
@@ -414,6 +377,30 @@ $(function () {
 
     $(window).resize(function () {
         fruit(mainHeight);
+    });
+
+    /*  tab  */
+    $('.tab').each(function () {
+        $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
+        $(this).find('.tab_tittle').click(function () {
+            var $this = $(this),
+                $value = $this.data("value"),
+                $tabVal = $this.closest('.tab').data("value");
+
+            $this.closest('.tab_head').find('.tab_tittle').removeClass('active');
+            $this.addClass('active');
+            $this.closest('.tab').find('.tab_body[data-value="' + $tabVal + '"]>div').hide();
+            $this.closest('.tab').find('.tab_body[data-value="' + $tabVal + '"]>div[data-value="' + $value + '"]').show();
+
+            var fruitUl_height = $('.fruit_ul').height();
+            var fruitLi_height = $('.fruit_ul > li').outerHeight();
+
+            $('.li_pages').liPages();
+            $('.fruit_images').ulHeight(fruitLi_height,fruitUl_height);
+
+            setMainHeight();
+
+        });
     });
 
     /* 小屏切换目录 */
@@ -646,7 +633,6 @@ $(function () {
 
     /* 登陆提交表单 */
     $('.btn').click(function () {
-
             var checkPass = $('.p_pass');
             var cc = $('.login_account input');
 
@@ -657,7 +643,6 @@ $(function () {
                 cc.each(function () {
                     var $this = $(this);
                     if (!$this.val()) {
-                        console.debug("texta = " + textA);
                         text = $this.parent('div').find('.input_text').text();
                         textA.push(text).toString();
                     }
@@ -674,8 +659,7 @@ $(function () {
 
              }, "json");*/
 
-        }
-    );
+        });
 
 
     $(document).keydown(function (event) {
