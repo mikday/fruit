@@ -12,18 +12,17 @@
 
                 var pages_height = page_li.parent('.li_pages').find('.pages').height();
 
-                var w_height = $(window).height();
-                var top_height = $('.top').height();
-                var footerH = $('.foot_bottom_simple').height();
-                var navH;
-
-                if ($('nav').is(":visible")) {
-                    navH = $('nav').height();
-                } else {
-                    navH = 0;
-                }
                 /*  main 页面长度 */
                 function normalHeight(m_height){
+                    var w_height = $(window).height();
+                    var top_height = $('.top').height();
+                    var footerH = $('.foot_bottom_simple').height();
+                    var navH;
+                    if ($('nav').is(":visible")) {
+                        navH = $('nav').height();
+                    } else {
+                        navH = 0;
+                    }
                     $('.normal').css({"height": m_height + top_height + footerH + navH + "px"});
 
                     var normalH = $('.normal').height();
@@ -44,7 +43,7 @@
                         var wh = $(window).height();
                         var main_height;
                         if (page_li_height * 3 <= wh * 0.7) {
-                            var count = Math.floor((wh - pages_height - top_height - footerH - navH) / page_li_height);
+                            var count = Math.floor((wh - pages_height - $('.top').height() - $('.foot_bottom_simple').height() - $('nav').height()) / page_li_height);
                             var max_length = page_li.closest('.li_pages').find('.page_li>li').length;
 
                             if (max_length <= count) {
@@ -53,7 +52,7 @@
                                 main_height = $('.main').height();
                                 normalHeight(main_height);
                             }else{
-                                page_li.css({'height': ( page_li_height + 2) * count + 'px'});
+                                page_li.css({'height': ( page_li_height ) * count + 'px'});
                                 page_li.parent('.li_pages').find('.pages').show();
                                 main_height = $('.main').height();
                                 normalHeight(main_height);

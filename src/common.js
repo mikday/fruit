@@ -95,8 +95,17 @@ $(function () {
         $(this).closest('.right_content').find('div.after_sales').show();
         setMainHeight();
     });
+    $('.add_new_address').click(function () {
+        $(this).closest('.right_content>div').hide();
+        $(this).closest('.right_content').find('div.new_address').show();
+        setMainHeight();
+    });
 
-
+    $('.edit_add').click(function () {
+        $(this).closest('.right_content>div').hide();
+        $(this).closest('.right_content').find('div.edit_address').show();
+        setMainHeight();
+    });
     /*  tab  */
     $('.tab').each(function () {
         $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
@@ -492,11 +501,14 @@ $(function () {
         var check = radio.prop("checked");
 
         if (!check) {
-            $(this).parent('.radio_groups').find('.radio_group').removeClass('active').find('input[type="radio"]').prop('checked', '');
-            $(this).parent('.radio_groups').find('.radio_group').removeClass('active');
+            $(this).closest('.radio_groups').find('.radio_group').removeClass('active').find('input[type="radio"]').prop('checked', '');
+            $(this).closest('.radio_groups').find('.radio_group').removeClass('active');
             //
             $(this).find('input[type="radio"]').prop('checked', 'checked');
             $(this).addClass('active');
+        }else{
+            $(this).removeClass('active');
+            $(this).find('input[type="radio"]').prop('checked', '');
         }
     });
 
