@@ -13,11 +13,12 @@
                 $roll_li_left = $roll.find('.left_angle'),
                 $roll_li_right = $roll.find('.right_angle'),
                 $roll_content = $roll_body.find('ul'),
+                $roll_li = $roll_content.find('li'),
                 roll_index = 0,
                 is_left = false,
                 timer = null;
-            console.log($roll_content);
-            console.log($roll_content.find('li').outerHeight(true));
+            // console.log($roll_content);
+            // console.log($roll_li.outerHeight(true));
             $roll.css({'height': $roll_content.find('li').outerHeight(true) + "px"});
             $roll_body.css({"width" : $roll_content.find('li').outerWidth(true) * opts.num + "px","height" :$roll_content.find('li').outerHeight(true) + "px"});
 

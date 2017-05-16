@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b5cef76-3dd7-4749-af9e-0d506555f356" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ulHeight.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/apricot.jpg" afterPath="$PROJECT_DIR$/img/apricot.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/carambola.jpg" afterPath="$PROJECT_DIR$/img/carambola.jpg" />
@@ -24,6 +27,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/reset.css" afterPath="$PROJECT_DIR$/style/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.html" afterPath="$PROJECT_DIR$/user.html" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,14 +48,28 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="53955">
+              <caret line="4087" column="17" lean-forward="false" selection-start-line="4087" selection-start-column="17" selection-end-line="4087" selection-end-column="17" />
+=======
             <state relative-caret-position="42945">
               <caret line="4076" column="17" lean-forward="false" selection-start-line="4076" selection-start-column="17" selection-end-line="4076" selection-end-column="17" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               <folding>
                 <element signature="e#7894#9178#0" expanded="false" />
                 <element signature="e#9180#10615#0" expanded="false" />
                 <element signature="e#10617#13380#0" expanded="false" />
                 <element signature="e#13382#16667#0" expanded="false" />
                 <element signature="e#16669#18313#0" expanded="false" />
+<<<<<<< HEAD
+                <element signature="e#168753#169139#0" expanded="false" />
+                <element signature="e#169141#170061#0" expanded="false" />
+                <element signature="e#170063#173174#0" expanded="false" />
+                <element signature="e#176538#176711#0" expanded="false" />
+                <element signature="e#176713#177241#0" expanded="false" />
+                <marker date="1494928200000" expanded="true" signature="22669:22797" ph="{...}" />
+                <marker date="1494928200000" expanded="true" signature="165133:165314" ph="{...}" />
+=======
                 <element signature="e#52290#52947#0" expanded="false" />
                 <element signature="e#52949#54142#0" expanded="false" />
                 <element signature="e#54144#58962#0" expanded="false" />
@@ -88,6 +106,7 @@
                 <element signature="e#169495#172606#0" expanded="false" />
                 <element signature="e#175970#176143#0" expanded="false" />
                 <element signature="e#176145#176673#0" expanded="false" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               </folding>
             </state>
           </provider>
@@ -123,15 +142,30 @@
       <file leaf-file-name="ulHeight.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ulHeight.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="5835">
+              <caret line="390" column="35" lean-forward="false" selection-start-line="390" selection-start-column="35" selection-end-line="390" selection-end-column="35" />
+              <folding>
+                <marker date="1494928200000" expanded="false" signature="99:101" ph="{...}" />
+=======
             <state relative-caret-position="795">
               <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="jquery.roll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jquery.roll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+=======
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,6 +214,7 @@
                 <marker date="1494924828000" expanded="false" signature="9457:10231" ph="{...}" />
                 <marker date="1494924828000" expanded="true" signature="10436:11229" ph="{...}" />
               </folding>
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
             </state>
           </provider>
         </entry>
@@ -187,10 +222,18 @@
       <file leaf-file-name="jquery.roll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jquery.roll.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="705">
+              <caret line="179" column="57" lean-forward="false" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
+              <folding>
+                <element signature="n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+=======
             <state relative-caret-position="510">
               <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
               <folding>
                 <element signature="e#2865#3473#0" expanded="false" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               </folding>
             </state>
           </provider>
@@ -199,8 +242,13 @@
       <file leaf-file-name="goods_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goods_list.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="5940">
+              <caret line="396" column="17" lean-forward="false" selection-start-line="396" selection-start-column="17" selection-end-line="396" selection-end-column="17" />
+=======
             <state relative-caret-position="5955">
               <caret line="397" column="17" lean-forward="false" selection-start-line="397" selection-start-column="17" selection-end-line="397" selection-end-column="17" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               <folding />
             </state>
           </provider>
@@ -209,8 +257,23 @@
       <file leaf-file-name="goods_detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goods_detail.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="182">
+              <caret line="431" column="28" lean-forward="false" selection-start-line="431" selection-start-column="28" selection-end-line="431" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42735">
+              <caret line="2849" column="75" lean-forward="false" selection-start-line="2849" selection-start-column="57" selection-end-line="2849" selection-end-column="75" />
+=======
             <state relative-caret-position="287">
               <caret line="438" column="0" lean-forward="true" selection-start-line="438" selection-start-column="0" selection-end-line="438" selection-end-column="0" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
               <folding />
             </state>
           </provider>
@@ -592,13 +655,23 @@
       <workItem from="1494834875443" duration="2945000" />
       <workItem from="1494837924132" duration="8621000" />
       <workItem from="1494852410957" duration="20146000" />
+<<<<<<< HEAD
+      <workItem from="1494897854389" duration="1112000" />
+      <workItem from="1494928784060" duration="541000" />
+      <workItem from="1494929498854" duration="4000" />
+=======
       <workItem from="1494897854389" duration="15276000" />
       <workItem from="1494927862955" duration="149000" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="578008000" />
+=======
     <option name="totallyTimeSpent" value="591433000" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
   </component>
   <component name="ToolWindowManager">
     <frame x="125" y="23" width="1155" height="701" extended-state="0" />
@@ -826,6 +899,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="32" />
+<<<<<<< HEAD
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settlement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="120" column="50" lean-forward="false" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jQuery.pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42735">
+          <caret line="2849" column="75" lean-forward="false" selection-start-line="2849" selection-start-column="57" selection-end-line="2849" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5940">
+          <caret line="396" column="17" lean-forward="false" selection-start-line="396" selection-start-column="17" selection-end-line="396" selection-end-column="17" />
+          <folding />
+=======
         </state>
       </provider>
     </entry>
@@ -833,11 +938,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="81" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classify.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="705">
+          <caret line="179" column="57" lean-forward="false" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+=======
         <state relative-caret-position="269">
           <caret line="179" column="36" lean-forward="false" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
         </state>
@@ -847,11 +961,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settlement.html">
+    <entry file="file://$PROJECT_DIR$/src/jquery.roll.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5835">
+          <caret line="390" column="35" lean-forward="false" selection-start-line="390" selection-start-column="35" selection-end-line="390" selection-end-column="35" />
+          <folding>
+            <marker date="1494928200000" expanded="false" signature="99:101" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12360">
+          <caret line="890" column="0" lean-forward="false" selection-start-line="890" selection-start-column="0" selection-end-line="890" selection-end-column="0" />
+          <folding>
+            <element signature="e#2825#3106#0" expanded="false" />
+            <element signature="e#3281#3308#0" expanded="false" />
+            <element signature="e#3716#3791#0" expanded="false" />
+            <element signature="e#3837#4009#0" expanded="false" />
+            <element signature="e#4024#4086#0" expanded="false" />
+            <element signature="e#4310#4336#0" expanded="false" />
+            <element signature="e#4378#4515#0" expanded="false" />
+            <element signature="e#4561#4584#0" expanded="false" />
+            <element signature="e#4600#4795#0" expanded="false" />
+            <element signature="e#4809#4831#0" expanded="false" />
+            <element signature="e#10443#10520#0" expanded="false" />
+            <element signature="e#10621#10654#0" expanded="false" />
+            <element signature="e#10682#10715#0" expanded="false" />
+            <element signature="e#10744#10800#0" expanded="false" />
+            <element signature="e#10830#10862#0" expanded="false" />
+            <element signature="e#10891#10948#0" expanded="false" />
+=======
         <state relative-caret-position="240">
           <caret line="234" column="22" lean-forward="true" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="22" />
         </state>
@@ -910,12 +1064,30 @@
             <element signature="e#21153#22059#0" expanded="false" />
             <marker date="1494924828000" expanded="false" signature="9457:10231" ph="{...}" />
             <marker date="1494924828000" expanded="true" signature="10436:11229" ph="{...}" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/reset.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="53955">
+          <caret line="4087" column="17" lean-forward="false" selection-start-line="4087" selection-start-column="17" selection-end-line="4087" selection-end-column="17" />
+          <folding>
+            <element signature="e#7894#9178#0" expanded="false" />
+            <element signature="e#9180#10615#0" expanded="false" />
+            <element signature="e#10617#13380#0" expanded="false" />
+            <element signature="e#13382#16667#0" expanded="false" />
+            <element signature="e#16669#18313#0" expanded="false" />
+            <element signature="e#168753#169139#0" expanded="false" />
+            <element signature="e#169141#170061#0" expanded="false" />
+            <element signature="e#170063#173174#0" expanded="false" />
+            <element signature="e#176538#176711#0" expanded="false" />
+            <element signature="e#176713#177241#0" expanded="false" />
+            <marker date="1494928200000" expanded="true" signature="22669:22797" ph="{...}" />
+            <marker date="1494928200000" expanded="true" signature="165133:165314" ph="{...}" />
+=======
         <state relative-caret-position="12360">
           <caret line="890" column="0" lean-forward="false" selection-start-line="890" selection-start-column="0" selection-end-line="890" selection-end-column="0" />
           <folding>
@@ -935,18 +1107,28 @@
             <element signature="e#10744#10800#0" expanded="false" />
             <element signature="e#10830#10862#0" expanded="false" />
             <element signature="e#10891#10948#0" expanded="false" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/goods_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="431" column="28" lean-forward="false" selection-start-line="431" selection-start-column="28" selection-end-line="431" selection-end-column="28" />
+=======
     <entry file="file://$PROJECT_DIR$/goods_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5955">
           <caret line="397" column="17" lean-forward="false" selection-start-line="397" selection-start-column="17" selection-end-line="397" selection-end-column="17" />
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/src/jquery.roll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1102,5 +1284,6 @@
         </state>
       </provider>
     </entry>
+>>>>>>> parent of 0173fcc... Revert "roll.js,ulHeight"
   </component>
 </project>

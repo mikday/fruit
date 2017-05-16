@@ -89,6 +89,23 @@ body {
 
 }
 
+.tool-tips.tool_img{
+    height:auto;
+    width:auto;
+    background:#fff;
+    padding:8px;
+    border-radius:3px;
+    -webkit-box-shadow: 0 0 8px rgba(180, 180, 180, 0.4);
+    -moz-box-shadow: 0 0 8px rgba(180, 180, 180, 0.4);
+    box-shadow: 0 0 8px rgba(180, 180, 180, 0.4);
+
+}
+
+.tool-tips.tool_img > img{
+    width:200px;
+    height:auto;
+}
+
 .show_tool {
     position: relative;
     overflow: visible;

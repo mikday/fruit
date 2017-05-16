@@ -2946,6 +2946,7 @@ span.phone_error {
 /*  shopping_car  --  shopping_car  --  shopping_car  --  shopping_car  --  shopping_car  --  shopping_car  --   */
 .shopping_car {
     margin-top: 10px;
+    min-height: 700px;
 }
 
 .checkbox > span {
@@ -3484,6 +3485,19 @@ span.phone_error {
     .car_operate > .car_cost > .go_pay > a {
         display: block;
         color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /*  购物车信息内容 --  购物车信息内容  --  购物车信息内容  --  购物车信息内容  --  购物车信息内容  --  购物车信息内容  --  购物车信息内容*/
+    .car {
+        margin-top: 0;
+    }
+
+    .shopping_car {
+        margin-top: 50px;
     }
 
 }
@@ -4069,6 +4083,7 @@ span.phone_error {
 .roll_body > ul > li {
     display: inline-block;
     float: none;
+    height: auto;
     padding: 0 5px;
     overflow: hidden;
 }
@@ -5290,7 +5305,7 @@ span.phone_error {
     box-sizing: border-box;
 }
 
-.main .page_tittle span {
+.main .page_tittle > span {
     display: inline-block;
     width: auto;
     height: 100%;
@@ -6733,8 +6748,6 @@ td.order_info_goods > p {
     line-height: 20px;
 }
 
-
-
 .jindutiao > .link_step {
     display: inline-block;
     float: left;
@@ -6775,7 +6788,7 @@ td.order_info_goods > p {
     width: 5px;
     background: #ccc;
     margin-left: -6px;
-    margin-right:10px;
+    margin-right: 10px;
     border-radius: 50%;
     border: 3px solid #f5f5f5;
 }
@@ -6800,19 +6813,17 @@ td.order_info_goods > p {
     width: 60px;
 }
 
-
-.jindu_status >li > span > span.link_btn{
-    display:inline-block;
-    float:none;
-    height:20px;
-    width:80px;
+.jindu_status > li > span > span.link_btn {
+    display: inline-block;
+    float: none;
+    height: 20px;
+    width: 80px;
     vertical-align: middle;
 }
 
-.jindu_status >li > span > span.link_btn > a{
+.jindu_status > li > span > span.link_btn > a {
 
 }
-
 
 li.arrival {
     border: none;
@@ -6829,14 +6840,15 @@ li.arrival:before {
     border: 3px solid #f8e582;
 }
 
-.leaf39{
-    top:350px;
-    left:30px;
+.leaf39 {
+    top: 350px;
+    left: 30px;
     height: 25px;
     width: 21px;
     background: url("../img/leaf2.png") -172px -239px no-repeat;
-    background-size:660px 490px;
+    background-size: 660px 490px;
 }
+
 /*  申请售后  --  申请售后  --  申请售后  --  申请售后  --  申请售后  --  申请售后  --  申请售后  --  申请售后  --  申请售后  -- */
 .my_rights_content {
     margin-top: 10px;
@@ -7148,7 +7160,7 @@ label {
     height: 120px;
     width: 100%;
     margin-top: 20px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -7280,16 +7292,16 @@ label {
 .after_sales_process {
     width: 100%;
     height: auto;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .after_sales_process > li {
     display: block;
     width: 80%;
-    max-height:600px;
+    max-height: 600px;
     height: 100px;
     border-radius: 6px;
-    margin:10px auto 0 auto;
+    margin: 10px auto 0 auto;
     background: rgb(248, 189, 52);
     box-shadow: inset 0 0 30px rgba(248, 151, 17, 0.67);
 }
@@ -7300,32 +7312,34 @@ label {
     margin: 5px auto;
 }
 
-.process_status{
-   width:100%;
-    height:70px;
-    line-height:100px;
-    text-align:center;
-    color:#fff;
+.process_status {
+    width: 100%;
+    height: 70px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
 }
 
-.pay_back_explain{
+.pay_back_explain {
     display: inline-block;
-    height:30px;
-    width:30px;
-    margin-left:10px;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
     background: url("../img/icon.png") -148.5px -101.5px no-repeat;
-    background-size:423px 133px;
+    background-size: 423px 133px;
     vertical-align: middle;
 
 }
-.process_time{
-    height:30px;
-    line-height:30px;
-    float:right;
-    margin-bottom:0;
-    margin-right:10px;
-    color:#fff;
+
+.process_time {
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: #fff;
 }
+
 @media screen and (max-width: 1024px) {
     /*  订单内部*/
     .order_middle > .order_level {
@@ -7551,9 +7565,10 @@ label {
     }
 
     /*  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --  发表评论 --*/
-    .comments{
-        padding-bottom:20px;
+    .comments {
+        padding-bottom: 20px;
     }
+
     .comment_text {
         height: auto;
         background: transparent;
@@ -7595,9 +7610,11 @@ label {
         float: none;
         width: 100%;
     }
-    .level_comment > .comment_level{
-        margin-bottom:10px;
+
+    .level_comment > .comment_level {
+        margin-bottom: 10px;
     }
+
     .level_comment > .push_comment > a {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -7699,10 +7716,11 @@ label {
     }
 
     /*  物流信息 */
-    .check_logistics{
-        width:100%;
-        padding:0;
+    .check_logistics {
+        width: 100%;
+        padding: 0;
     }
+
     .logistics_content_top {
         height: 80px;
     }
@@ -7750,13 +7768,14 @@ label {
         background: url("../img/leaf2.png") -13px -37px no-repeat;
         background-size: 143px 106px;
     }
-    .jindu_status{
+
+    .jindu_status {
         /*background:#fff;*/
-        margin-top:4px;
-        width:100%;
-        padding:0 10px;
+        margin-top: 4px;
+        width: 100%;
+        padding: 0 10px;
         box-sizing: border-box;
-        
+
     }
 
     .jindu_status > li {
@@ -7775,7 +7794,7 @@ label {
     }
 
     .jindu_status > li:before {
-        margin-right:5px;
+        margin-right: 5px;
     }
 
     .jindu_status > li > span.data {
@@ -7790,9 +7809,10 @@ label {
         width: 50px;
     }
 
-    .jindu_status > li >  span.text {
+    .jindu_status > li > span.text {
         width: 190px;
     }
+
     /*.jindu_status > li > span.text {
         display:block;
         float:none;
@@ -7951,7 +7971,6 @@ label {
         height: 60px;
     }
 
-
     .order_middle .goods_des > a > p {
         height: 60px;
         margin: 10px 0 0 65px;
@@ -7975,8 +7994,7 @@ label {
     }
 
     /*  物流信息 */
-
-    .jindu_status > li >  span.text {
+    .jindu_status > li > span.text {
         width: 140px;
     }
 
@@ -8033,9 +8051,10 @@ label {
 
 @media screen and (max-width: 320px) {
     /*  物流信息 */
-    .jindu_status > li >  span.text {
+    .jindu_status > li > span.text {
         width: 100px;
     }
+
     /* 星级评价 */
     .level_comment > .comment_level > li > span {
         width: 90px;
@@ -8214,7 +8233,7 @@ label {
     height: 40px;
     width: 300px;
     line-height: 40px;
-    padding:10px 5px 0 5px;
+    padding: 10px 5px 0 5px;
     border: none;
     border-bottom: 1px solid #f8bd34;
     box-sizing: border-box;
@@ -8241,7 +8260,7 @@ label {
 .change_phone {
     width: 100%;
     height: 451px;
-    transition:all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
     overflow: hidden;
 }
 
@@ -8394,7 +8413,7 @@ label {
         height: 40px;
         width: 260px;
         line-height: 40px;
-        padding:10px 5px 0 5px;
+        padding: 10px 5px 0 5px;
         border: none;
         border-bottom: 1px solid #f8bd34;
         box-sizing: border-box;
@@ -8403,7 +8422,6 @@ label {
     .input_group_line_btn {
         width: 360px;
     }
-
 
     .change_password .btn_group {
         width: 225px;
@@ -8437,607 +8455,856 @@ label {
 
 }
 
-
 /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
-.myTest{
-
-}
-.myTest_content{
-    height:auto;
-    overflow:hidden;
-}
-.myTest_head{
-    height:40px;
-    border-bottom:1px solid #ccc;
+.myTest_content > ul {
+    overflow: hidden;
 }
 
-.myTest_head > li{
-    display:inline-block;
-    float:left;
-    line-height:40px;
-    text-align:center;
-}
-
-
-.myTest_list{
-    display:inline-block;
-    float:left;
-    width:100%;
-    height:auto;
-}
-.myTest_list > li{
-    display:inline-block;
-    float:left;
-    height:160px;
-}
-.myTest_list > li > a{
-    display:block;
-    overflow:hidden;
-}
-/*------------------------------------------------*/
-
-.test-goods{
-    display:inline-block;
-    float:left;
-    width:50%;
-}
-
-.apply_data{
-    display:inline-block;
-    float:left;
-    width:15%;
-    text-align:center;
-    line-height:160px;
-}
-
-.test_status{
-    display:inline-block;
-    float:left;
-    width:15%;
-    overflow:hidden;
-}
-
-
-.test-goods{
-
-    overflow:hidden;
-}
-.test-goods .img {
-    float:left;
-    width:120px;
-    height:120px;
-    margin-top:20px;
-    border:1px solid #f8bd34;
+.my_try {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    margin-top: 10px;
     border-radius: 3px;
+    border: 1px solid #f8bd34;
     box-sizing: border-box;
 }
 
-.test-goods .img > img {
-    width:100%;
-    height:100%;
+.my_try:hover {
+    -webkit-box-shadow: 0 0 10px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(180, 180, 180, 0.6);
+    box-shadow: 0 0 10px rgba(180, 180, 180, 0.6);
 }
 
-.test-goods > p {
-    margin-left:130px;
-    height:120px;
-    margin-top:20px;
-    line-height:30px;
-    text-align:center;
-    overflow:hidden;
+.my_try > a {
+    height: auto;
+    width: 100%;
 }
 
-.test_status .has_commented{
-    display:block;
-    line-height:160px;
-    text-align:center;
+.test_fruit_info {
+    width: 100%;
+    height: 140px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.test-comment{
-    display:inline-block;
-    float:left;
-    width:20%;
+.test_fruit_info > .img {
+    float: left;
+    height: 120px;
+    width: 120px;
+    /*border:1px solid #f8bd34;*/
+    box-sizing: border-box;
 }
 
-.test-comment .has_commented{
-    width:100%;
-    height:100%;
+.test_fruit_info > .img > img {
+    width: 100%;
 }
 
-.test-comment .has_commented > ul{
-    height:100px;
-    width:100%;
+.test_fruit_info > p {
+    height: 120px;
+    margin: 0 5px 0 150px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    overflow: hidden;
 }
 
-.test-comment .has_commented > ul > li{
-    height:30px;
-    width:100%;
-    line-height:30px;
-    overflow:hidden;
+.my_try_comment, .my_try_logistics {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.my_try_comment > span, .my_try_logistics > span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .myTest_content {
+        padding: 0 5px;
+    }
+
+    .test_fruit_info {
+        height: 110px;
+        padding: 10px 0;
+    }
+
+    .test_fruit_info > .img {
+        float: left;
+        height: 90px;
+        width: 90px;
+        /*border:1px solid #f8bd34;*/
+        box-sizing: border-box;
+    }
+
+    .test_fruit_info > .img > img {
+        width: 100%;
+    }
+
+    .test_fruit_info > p {
+        height: 90px;
+        margin: 0 5px 0 95px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        overflow: hidden;
+    }
+}
+
+/*------我的评论-----------------------我的评论----------------------我的评论------------------------我的评论-------------*/
+.manerge_comment {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.slided_down_menu.orange > .text {
+
+    border: 1px solid #f8bd34;
+}
+
+.slided_down_menu.orange > .text > span:last-child {
+    color: #f8bd34;
+}
+
+.slided_down_menu.orange > ul {
+    border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid #f8bd34;
+    border-left: 1px solid #f8bd34;
+    border-right: 1px solid #f8bd34;
+}
+
+.manerge_comment .slided_down_menu {
+    width: 160px;
+    height: 30px;
+}
+
+.manerge_comment .slided_down_menu > .text {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+.manerge_comment .slided_down_menu > .text > span:last-child {
+    line-height: 28px;
+}
+
+.manerge_comment .slided_down_menu > ul {
+    top: 28px;
+}
+
+.manerge_comment .slided_down_menu > ul > li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.my_comment_list {
+    width: 95%;
+    height: auto;
+    margin: 10px auto 0 auto;
+}
+
+/*my_comment_list > ul > li.my_comment_content */
+.my_comment_list > ul {
+    overflow: hidden;
+}
+
+.my_comment_content {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.my_comment_content > .my_comment_info {
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.my_comment_info > p {
+    height: auto;
+    max-height: 90px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin: 0;
+}
+
+.comment_other_info {
+    overflow: hidden;
+}
+
+.comment_with_pic {
+    width: 100%;
+    height: 50px;
+}
+
+.comment_with_pic .img {
+    display: inline-block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    padding: 0 5px;
+}
+
+.comment-data > span {
+    display: inline-block;
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.comment_level {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+}
+
+.comment_level > li {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.comment_level > li > ul {
+    display: inline-block;
+}
+
+.comment_level > li > ul > li {
+    display: inline-block;
+}
+
+.comment_other_info .btn {
+    display: inline-block;
+    float: right;
+    width: 40px;
 
 }
 
-
-.test-comment .has_commented > ul > li >span {
-    display:inline-block;
-    float:left
+.able_to_large {
+    cursor: url("../img/search.png"), auto;
 }
 
-.test-comment .has_commented > ul > li > ul {
-    display:inline-block;
-    float:left
+.myIntegral_list {
+    height: 90px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
 }
 
-.test-comment .has_commented > ul > li > ul > li{
-    display:inline-block;
-    float:left;
-    height:18px;
-    width:18px;
+.myIntegral_list > div {
+    height: 90px;
 }
 
-.test-comment .has_commented > ul > li.composite > ul > li > span{
-    display:inline-block;
-    height:15px;
-    width:15px;
-    margin-top:1.5px;
-    background:url("../img/icon.png") -16px -1.2px no-repeat;
-    background-size:211.5px 66px;
+.myIntegral_goods_list, .myIntegral_change_time, .myIntegral_count, .myIntegral_channel {
+    display: inline-block;
+    float: left;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.test-comment .has_commented > ul > li.fresh > ul > li > span{
-    display:inline-block;
-    height:15px;
-    width:16px;
-    margin-top:1.5px;
-    background:url("../img/icon.png") -16px -19px no-repeat;
-    background-size:218px 68px;
+.myIntegral_goods_list {
+    width: 60%;
+    overflow: hidden;
 }
 
-.test-comment .has_commented > ul > li.sweety > ul > li > span{
-    display:inline-block;
-    height:15px;
-    width:10.5px;
-    margin-top:1.5px;
-    background:url("../img/icon.png") -16.5px -34.5px no-repeat;
-    background-size:218px 68px;
+.myIntegral_goods_list .img {
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-.no_arrival{
-    display:block;
-    width:100%;
-    height:auto;
-    margin-top:50px;
+.myIntegral_goods_list p {
+    height: 90px;
+    margin-left: 100px;
+    line-height: 30px;
+    text-align: justify;
+    overflow: hidden;
 }
 
-.no_arrival > li {
-    display:block;
-    width:100%;
-    height:30px;
-    line-height:30px;
-    text-align:center;
+.myIntegral_change_time {
+    width: 20%;
 }
 
-.test-comment .btn{
-    height:30px;
-    line-height:30px;
-    width:60px;
-    margin:65px auto 0 auto;
+.myIntegral_change_time > span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
 }
 
-.has_commented > .btn{
-    margin:0 auto;
+.myIntegral_change_time > span:first-child {
+    margin-top: 15px;
 }
 
-.half_level{
+.myIntegral_count, .myIntegral_channel {
+    width: 10%;
+}
+
+.myIntegral_count {
+    font-size: 30px
+}
+
+/* 积分响应式 --  积分响应式 --  积分响应式 --  积分响应式 -- 积分响应式 --  积分响应式 --  积分响应式 --  积分响应式 --  积分响应式 */
+@media screen and (max-width: 1024px) {
+    /* 我的评论 */
+    .my_comment_list > ul {
+        overflow: hidden;
+    }
+
+    .my_comment_content {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .my_comment_content > .my_comment_info {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .my_comment_info > p {
+        height: auto;
+        max-height: 90px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .comment_other_info {
+        overflow: hidden;
+    }
+
+    .comment_with_pic {
+        width: 100%;
+        height: 50px;
+    }
+
+    .comment_with_pic .img {
+        display: inline-block;
+        float: left;
+        height: 40px;
+        width: 40px;
+        padding: 0 5px;
+    }
+
+    .comment-data > span {
+        display: inline-block;
+        color: #ccc;
+        font-size: 0.9rem;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+
+    .comment_level {
+        display: inline-block;
+        width: auto;
+        height: 30px;
+    }
+
+    .comment_level > li {
+        display: inline-block;
+        height: 30px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .comment_level > li > ul {
+        display: inline-block;
+    }
+
+    .comment_level > li > ul > li {
+        display: inline-block;
+    }
+
+    .comment_other_info .btn {
+        display: inline-block;
+        float: right;
+        width: 40px;
+
+    }
+
+    .able_to_large {
+        cursor: url("../img/search.png"), auto;
+    }
+
+    /* jifen */
+    .myIntegral_goods_list {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .myIntegral_count {
+        font-size: 24px
+    }
+    .myIntegral_channel{
+        width:20%;
+    }
+}
+
+/*-----*/
+.composite > ul > li > span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-top: 1.5px;
+    background: url("../img/icon.png") -16px -1.2px no-repeat;
+    background-size: 211.5px 66px;
+}
+
+.fresh > ul > li > span {
+    display: inline-block;
+    height: 15px;
+    width: 16px;
+    margin-top: 1.5px;
+    background: url("../img/icon.png") -16px -19px no-repeat;
+    background-size: 218px 68px;
+}
+
+.sweety > ul > li > span {
+    display: inline-block;
+    height: 15px;
+    width: 10.5px;
+    margin-top: 1.5px;
+    background: url("../img/icon.png") -16.5px -34.5px no-repeat;
+    background-size: 218px 68px;
+}
+
+.half_level {
     opacity: 0.6;
 }
 
-
-@media screen and (max-width: 1240px){
-    /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
-    /*------------------------------------------------*/
-
-    .test-goods{
-        display:inline-block;
-        float:left;
-        width:45%;
-    }
-
-    .test-comment{
-        display:inline-block;
-        float:left;
-        width:25%;
-    }
+/*  我的积分 */
+.my_integral {
+    height: 40px;
+    line-height: 40px;
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
     /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
-    .myTest_list > li{
-        height:120px;
-    }
     /*------------------------------------------------*/
 
-    .test-goods{
-        display:inline-block;
-        float:left;
-        width:40%;
+}
+
+@media screen and (max-width: 1240px) {
+    /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
+    .myTest_list > li {
+        height: 120px;
+    }
+
+    /*------------------------------------------------*/
+    .test-goods {
+        display: inline-block;
+        float: left;
+        width: 40%;
     }
 
     .test-goods .img {
-        width:80px;
-        height:80px;
+        width: 80px;
+        height: 80px;
     }
 
-    .test-comment{
-        width:30%;
+    .test-comment {
+        width: 30%;
     }
 
     .test-goods > p {
-        margin-left:90px;
-        height:90px;
-        margin-top:15px;
+        margin-left: 90px;
+        height: 90px;
+        margin-top: 15px;
     }
 
-    .test_status .has_commented{
-        line-height:120px;
-    }
-    .test-comment .has_commented > ul{
-        height:80px;
+    .test_status .has_commented {
+        line-height: 120px;
     }
 
-    .has_commented > .btn{
-       margin:10px auto 0 auto;
+    .test-comment .has_commented > ul {
+        height: 80px;
     }
-    .no_arrival{
-        display:block;
-        width:100%;
-        height:auto;
-        margin-top:30px;
+
+    .has_commented > .btn {
+        margin: 10px auto 0 auto;
     }
-    .apply_data{
-        line-height:120px;
+
+    .no_arrival {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .apply_data {
+        line-height: 120px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
+    .myTest_head {
+        display: none;
+    }
 
-    .myTest_head{
-        display:none;
+    .myTest_list > li {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
     }
-    .myTest_list > li{
-        display:block;
-        float:none;
-        width:100%;
-        height:auto;
-    }
+
     /*------------------------------------------------*/
-
-    .test-goods{
-        display:block;
-        float:none;
-        width:100%;
-        height:80px;
+    .test-goods {
+        display: block;
+        float: none;
+        width: 100%;
+        height: 80px;
     }
-.text_comment_info{
-    display:block;
-    width:100%;
-    height:40px;
-}
-    .apply_data,.test_status,.test-comment{
-        width:auto;
-        height:40px;
-        text-align:right;
-        line-height:40px;
-        border-top:1px solid #ccc;
+
+    .text_comment_info {
+        display: block;
+        width: 100%;
+        height: 40px;
+    }
+
+    .apply_data, .test_status, .test-comment {
+        width: auto;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        border-top: 1px solid #ccc;
     }
 
     .test-goods .img {
-        width:60px;
-        height:60px;
-        margin-top:10px;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
     }
 
     .test-goods > p {
-        margin-left:70px;
-        margin-right:10px;
-        height:60px;
-        margin-top:10px;
-        line-height:20px;
-        font-size:12px;
+        margin-left: 70px;
+        margin-right: 10px;
+        height: 60px;
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 12px;
     }
 
-    .test_status .has_commented{
-        display:block;
-        line-height:40px;
-        text-align:right;
+    .test_status .has_commented {
+        display: block;
+        line-height: 40px;
+        text-align: right;
     }
 
-
-    .test-comment .has_commented{
-        width:100%;
-        height:100%;
+    .test-comment .has_commented {
+        width: 100%;
+        height: 100%;
     }
 
-    .test-comment .has_commented > ul{
-        height:100px;
-        width:100%;
+    .test-comment .has_commented > ul {
+        height: 100px;
+        width: 100%;
     }
 
-    .test-comment .has_commented > ul > li{
-        height:30px;
-        width:100%;
-        line-height:30px;
-        overflow:hidden;
+    .test-comment .has_commented > ul > li {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        overflow: hidden;
 
     }
 
-
-    .test-comment .has_commented > ul > li >span {
-        display:inline-block;
-        float:left
+    .test-comment .has_commented > ul > li > span {
+        display: inline-block;
+        float: left
     }
 
     .test-comment .has_commented > ul > li > ul {
-        display:inline-block;
-        float:left
+        display: inline-block;
+        float: left
     }
 
-    .test-comment .has_commented > ul > li > ul > li{
-        display:inline-block;
-        float:left;
-        height:18px;
-        width:18px;
+    .test-comment .has_commented > ul > li > ul > li {
+        display: inline-block;
+        float: left;
+        height: 18px;
+        width: 18px;
     }
 
-    .test-comment .has_commented > ul > li.composite > ul > li > span{
-        display:inline-block;
-        height:15px;
-        width:15px;
-        margin-top:1.5px;
-        background:url("../img/icon.png") -16px -1.2px no-repeat;
-        background-size:211.5px 66px;
+    .test-comment .has_commented > ul > li.composite > ul > li > span {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-top: 1.5px;
+        background: url("../img/icon.png") -16px -1.2px no-repeat;
+        background-size: 211.5px 66px;
     }
 
-    .test-comment .has_commented > ul > li.fresh > ul > li > span{
-        display:inline-block;
-        height:15px;
-        width:16px;
-        margin-top:1.5px;
-        background:url("../img/icon.png") -16px -19px no-repeat;
-        background-size:218px 68px;
+    .test-comment .has_commented > ul > li.fresh > ul > li > span {
+        display: inline-block;
+        height: 15px;
+        width: 16px;
+        margin-top: 1.5px;
+        background: url("../img/icon.png") -16px -19px no-repeat;
+        background-size: 218px 68px;
     }
 
-    .test-comment .has_commented > ul > li.sweety > ul > li > span{
-        display:inline-block;
-        height:15px;
-        width:10.5px;
-        margin-top:1.5px;
-        background:url("../img/icon.png") -16.5px -34.5px no-repeat;
-        background-size:218px 68px;
+    .test-comment .has_commented > ul > li.sweety > ul > li > span {
+        display: inline-block;
+        height: 15px;
+        width: 10.5px;
+        margin-top: 1.5px;
+        background: url("../img/icon.png") -16.5px -34.5px no-repeat;
+        background-size: 218px 68px;
     }
 
-    .no_arrival{
-        display:block;
-        width:100%;
-        height:auto;
-        margin-top:50px;
+    .no_arrival {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
     }
 
     .no_arrival > li {
-        display:block;
-        width:100%;
-        height:30px;
-        line-height:30px;
-        text-align:center;
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
     }
 
-    .test-comment .btn{
-        height:30px;
-        line-height:30px;
-        width:60px;
-        margin:65px auto 0 auto;
+    .test-comment .btn {
+        height: 30px;
+        line-height: 30px;
+        width: 60px;
+        margin: 65px auto 0 auto;
     }
 
-    .has_commented > .btn{
-        margin:0 auto;
+    .has_commented > .btn {
+        margin: 0 auto;
     }
 
-    .half_level{
+    .half_level {
         opacity: 0.6;
     }
 }
 
 /*  我的地址 */
-.myAddress_content{
-    width:90%;
-    margin:0 auto;
+.myAddress_content {
+    width: 90%;
+    margin: 0 auto;
 }
-.add_new_address{
-    width:100%;
-    height:40px;
+
+.add_new_address {
+    width: 100%;
+    height: 40px;
 }
-.add_new_address > span{
-    display:inline-block;
-    line-height:40px;
-    width:auto;
+
+.add_new_address > span {
+    display: inline-block;
+    line-height: 40px;
+    width: auto;
     vertical-align: middle;
 }
 
-.add_new_address > span:first-child{
-    height:15px;
-    width:15px;
-    background:url("../img/icon.png") -34px -50px no-repeat;
-    background-size:211.5px 66.5px;
+.add_new_address > span:first-child {
+    height: 15px;
+    width: 15px;
+    background: url("../img/icon.png") -34px -50px no-repeat;
+    background-size: 211.5px 66.5px;
 }
 
-.add_new_address > span:last-child{
-    margin-left:5px;
+.add_new_address > span:last-child {
+    margin-left: 5px;
 }
 
 /**/
 
-.my_add_list{
-    overflow:hidden;
+.my_add_list {
+    overflow: hidden;
 }
 
-.my_add_list > li{
-    height:80px;
-    padding-top:20px;
-    overflow:hidden;
-    border-bottom:1px solid #ccc;
+.my_add_list > li {
+    height: 80px;
+    padding-top: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
 }
 
-.my_add_list > li:last-child{
-   border:none;
+.my_add_list > li:last-child {
+    border: none;
 }
 
-.my_address_info{
-    overflow:hidden;
+.my_address_info {
+    overflow: hidden;
 }
 
-.name_phone,.accept_add,.accept_name,.accept_phone{
-    display:inline-block;
-    float:left;
-    width:50%;
-    height:30px;
-    line-height:30px;
-    text-align:left;
+.name_phone, .accept_add, .accept_name, .accept_phone {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
 }
 
-
-
-.myAdd_operate{
-    width:100%;
-    height:30px;
-    text-align:right;
+.myAdd_operate {
+    width: 100%;
+    height: 30px;
+    text-align: right;
 }
 
-.set_as_default,.del_add,.edit_add{
-    display:inline-block;
-    width:auto;
-    padding:0 10px;
-    line-height:30px;
+.set_as_default, .del_add, .edit_add {
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    line-height: 30px;
 }
 
-.del_add>span:last-child,.edit_add>span:last-child{
-    display:inline-block;
-   margin-left:5px;
+.del_add > span:last-child, .edit_add > span:last-child {
+    display: inline-block;
+    margin-left: 5px;
 }
-
 
 .myAdd_operate .radio_group .radio > span {
-    height:14px;
-    width:14px;
-    margin-top:8px;
+    height: 14px;
+    width: 14px;
+    margin-top: 8px;
 }
 
-
-.myAdd_operate .radio_group:hover, .myAdd_operate .radio_group.active{
-    background:transparent;
-    color:#f8bd34;
+.myAdd_operate .radio_group:hover, .myAdd_operate .radio_group.active {
+    background: transparent;
+    color: #f8bd34;
 }
 
 /* 新增 编辑地址*/
-.myAddress form{
-    width:410px;
-    margin:30px auto 0 auto;
+.myAddress form {
+    width: 410px;
+    margin: 30px auto 0 auto;
 }
 
-.myAddress form .radio_group{
-    display:block;
-    height:60px;
-    line-height:60px;
+.myAddress form .radio_group {
+    display: block;
+    height: 60px;
+    line-height: 60px;
 }
 
 .myAddress .radio_group .radio > span {
-    height:14px;
-    width:14px;
-    margin-top:23px;
+    height: 14px;
+    width: 14px;
+    margin-top: 23px;
 }
 
-
-.myAddress .radio_group:hover, .myAddress .radio_group.active{
-    background:transparent;
-    color:#f8bd34;
+.myAddress .radio_group:hover, .myAddress .radio_group.active {
+    background: transparent;
+    color: #f8bd34;
 }
 
-.myAddress form .input_group_line > span{
-    text-align:left;
-    line-height:65px;
+.myAddress form .input_group_line > span {
+    text-align: left;
+    line-height: 65px;
 }
 
-.myAddress form .btn{
-    width:80px;
-    margin:0 auto;
+.myAddress form .btn {
+    width: 80px;
+    margin: 0 auto;
 }
 
-
-@media screen and (max-width: 480px){
-    .myAddress_content{
-        width:100%;
-        overflow:visible;
+@media screen and (max-width: 480px) {
+    .myAddress_content {
+        width: 100%;
+        overflow: visible;
     }
-    .my_add_list > li{
-        padding:5px;
-        height:auto;
-        background:#f5f5f5;
+
+    .my_add_list > li {
+        padding: 5px;
+        height: auto;
+        background: #f5f5f5;
         border-radius: 3px;
-        border:none;
-        -webkit-box-shadow: 0 0 10px  rgba(180,180,180,0.3);
-        -moz-box-shadow: 0 0 10px  rgba(180,180,180,0.3);
-        box-shadow: 0 0 10px  rgba(180,180,180,0.3);
-        overflow:hidden;
-        margin-bottom:20px;
+        border: none;
+        -webkit-box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
+        -moz-box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
+        box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
+        overflow: hidden;
+        margin-bottom: 20px;
         box-sizing: border-box;
     }
 
-    .name_phone,.accept_add{
-        display:block;
-        float:none;
-        width:100%;
-    }
-    .accept_phone{
-        text-align:right;
-    }
-    .myAdd_operate{
-        width:100%;
-        height:30px;
-        text-align:right;
+    .name_phone, .accept_add {
+        display: block;
+        float: none;
+        width: 100%;
     }
 
-    .myAddress form{
-        width:330px;
+    .accept_phone {
+        text-align: right;
     }
-    .myAddress .input_group_line span{
-        width:60px;
+
+    .myAdd_operate {
+        width: 100%;
+        height: 30px;
+        text-align: right;
     }
-    .myAddress .input_group_line input{
-        width:260px;
+
+    .myAddress form {
+        width: 330px;
+    }
+
+    .myAddress .input_group_line span {
+        width: 60px;
+    }
+
+    .myAddress .input_group_line input {
+        width: 260px;
     }
 }
 
-@media screen and (max-width: 320px){
-    .myAddress form{
-        width:290px;
+@media screen and (max-width: 320px) {
+    .myAddress form {
+        width: 290px;
     }
-    .myAddress .input_group_line span{
-        width:60px;
+
+    .myAddress .input_group_line span {
+        width: 60px;
     }
-    .myAddress .input_group_line input{
-        width:220px;
+
+    .myAddress .input_group_line input {
+        width: 220px;
     }
 }
+
 /*我的收藏*/
-.my_collection{
-    display:inline-block;
-    float:right;
-    width:120px;
-    margin-top:-22px;
+.my_collection {
+    display: inline-block;
+    float: right;
+    width: 140px;
+    background: #fff;
+    margin-top: 10px;
 }
 
-.my_collection ul{
-    z-index:2;
+.my_collection ul {
+    z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+    .my_collection {
+        margin-left: 10px;
+    }
+}
+
 /*  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  横屏  --  */
 @media screen and (max-height: 550px) {
     .login_sign {
@@ -9047,6 +9314,10 @@ label {
 
     .login_sign p.rights {
         bottom: 0;
+    }
+
+    .shopping_car {
+        width: 100%;
     }
 }
 
