@@ -557,15 +557,16 @@ $(function () {
         var status = $(this).find('input[type="checkbox"]').prop("checked");
         var checkData = $(this).data("value");
         var checkVal = $(this).find('input[type="checkbox"]').val();
-
+        console.log("oo");
 
         if (!status) {
             if (checkVal == "all") {
                 $(this).closest('.main').find('.checkbox[data-value="' + checkData + '"]').find('input[type="checkbox"]').prop('checked', 'checked');
-                $(this).closest('.main').find('.checkbox[data-value="' + checkData + '"]>span').css({'background': '#f8bd34'});
+                $(this).closest('.main').find('.checkbox[data-value="' + checkData + '"]').addClass('active');
             } else {
-                $(this).find('span').css({'background': '#f8bd34'});
+                $(this).addClass('active');
                 $(this).find('input[type="checkbox"]').prop('checked', 'checked');
+                console.log($(this).find('input[type="checkbox"]')).prop('checked');
             }
 
         } else {
@@ -573,7 +574,7 @@ $(function () {
                 $(this).closest('.main').find('.checkbox[data-value="' + checkData + '"]').find('input[type="checkbox"]').prop('checked', '');
                 $(this).closest('.main').find('.checkbox[data-value="' + checkData + '"]>span').css({'background': '#fff'});
             } else {
-                $(this).find('span').css({'background': '#fff'});
+                $(this).removeClass('active');
                 $(this).find('input[type="checkbox"]').prop('checked', '');
             }
 

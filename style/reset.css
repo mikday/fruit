@@ -946,3 +946,7 @@ p.page_tittle {
 .page_li{
     overflow: hidden;
 }
+
+.checkbox.active > span{
+        background:#f8bd34;
+}

@@ -110,3 +110,7 @@ body {
     position: relative;
     overflow: visible;
 }
+
+.article{
+    min-width:300px;
+}
