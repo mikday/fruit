@@ -1,4 +1,9 @@
 html,body{
-    height:auto;
+    height:100%;
     overflow-x: hidden;
+}
+.normal{
+    height:auto;
+    padding-bottom:50px;
+    min-height:100%;
 }

@@ -17,10 +17,11 @@
                 roll_index = 0,
                 is_left = false,
                 timer = null;
-            // console.log($roll_content);
-            // console.log($roll_li.outerHeight(true));
-            $roll.css({'height': $roll_content.find('li').outerHeight(true) + "px"});
-            $roll_body.css({"width" : $roll_content.find('li').outerWidth(true) * opts.num + "px","height" :$roll_content.find('li').outerHeight(true) + "px"});
+
+            console.log("li.height = " +  $roll_li.outerHeight(true));
+            console.log("li.width = " + $roll_li.outerWidth(true));
+            $roll_body.css({"width" : $roll_li.outerWidth(true) * opts.num + "px","height" :$roll_li.outerHeight(true) + "px"});
+            $roll.css({'height': $roll_li.outerHeight(true) + "px"});
 
             var p_count = Math.ceil($roll_content.outerWidth() / $roll_body.width());
 
@@ -32,31 +33,7 @@
                 $roll_li_right.css({"margin-top" : ($roll_body.height() - $roll_li_right.height()) / 2 + "px","padding-right" : 1 + "px","box-sizing" : "border-box"});
 
             }
-            function height() {
-                var mainH = $('.main').outerHeight(true);
-                var w_height = $(window).height();
-                var top_height = $('.top').height();
-                var footerH = $('.foot_bottom_simple').height();
-                var navH;
 
-                if ($('nav').is(":visible")) {
-                    navH = $('nav').height();
-                } else {
-                    navH = 0;
-                }
-                /*  main 页面长度 */
-
-                $('.normal').css({"height": mainH + top_height + footerH + navH + "px"});
-
-                var normalH = $('.normal').height();
-
-                if (normalH < w_height) {
-                    $('.normal').css({"height": 100 + "%"});
-                    return;
-                }
-            }
-
-            height();
 
 
             $roll_li_left.click(function () {

@@ -346,6 +346,7 @@ p.page_tittle {
 .pages {
     height: 100px;
     width: 100%;
+    margin-top:10px;
     overflow: hidden;
 
 }
@@ -932,9 +933,18 @@ p.page_tittle {
 }
 
 .fruit_img > img {
-    width: 100%
+    width: 100%;
+    transition:all 500ms linear;
 }
+.fruit_img:hover > img {
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 
+    transform-origin:50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
 .goods_img > img {
     width: 100%;
 }

@@ -4,53 +4,6 @@
 
 
 $(function () {
-    function mainHeight(main_height) {
-
-        function height(mainHeight) {
-
-            var w_height = $(window).height();
-            var w_width = $(window).width();
-            var top_height = $('.top').height();
-            var footerH = $('.foot_bottom_simple').height();
-            var navH;
-
-            if (w_width > 480 ) {
-                navH = $('nav').height();
-            } else {
-                navH = 0;
-            }
-            /*  main 页面长度 */
-
-            $('.normal').css({"height": main_height + top_height + footerH + navH + "px"});
-
-
-
-            var normalH = $('.normal').outerHeight(true);
-            //
-            // console.log("normalH = " + normalH);
-            // console.log("main_height = " + main_height);
-            // console.log("navH = " + navH);
-            // console.log("document.documentElement.clientHeight = " + document.documentElement.clientHeight);
-
-            if (normalH < document.documentElement.clientHeight - 10) {
-                // console.log("normalH < w_height");
-                $('.normal').css({"height": document.documentElement.clientHeight + 20 + "px"});
-
-            }
-        }
-
-        height(main_height);
-
-        $(window).resize(function () {
-            height(main_height);
-        });
-    }
-
-    function setMainHeight() {
-        var main_height = $('.main').outerHeight(true);
-        mainHeight(main_height);
-    }
-
 
 //search
 
@@ -86,12 +39,12 @@ $(function () {
         $(this).closest('.right_content').find('div.my_order_detail').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
         $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="my_order"]').addClass('active');
-        setMainHeight();
+        //setMainHeight();
     });
     $('.apply_rights').click(function () {
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.my_rights').show();
-        setMainHeight();
+        //setMainHeight();
     });
 
     $('.go_to_comment').click(function () {
@@ -99,24 +52,24 @@ $(function () {
         $(this).closest('.right_content').find('div.comments').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
         $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="myComment"]').addClass('active');
-        setMainHeight();
+        //setMainHeight();
     });
 
     $('.rights_jindu').click(function () {
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.after_sales').show();
-        setMainHeight();
+        //setMainHeight();
     });
     $('.add_new_address').click(function () {
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.new_address').show();
-        setMainHeight();
+        //setMainHeight();
     });
 
     $('.edit_add').click(function () {
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.edit_address').show();
-        setMainHeight();
+        //setMainHeight();
     });
 
     $('.check_comment').click(function () {
@@ -124,7 +77,7 @@ $(function () {
         $(this).closest('.right_content').find('div.myComment').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
         $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="myComment"]').addClass('active');
-        setMainHeight();
+        //setMainHeight();
     });
     /* input  */
     $('input').focus(function () {
@@ -201,7 +154,7 @@ $(function () {
         $(this).toggleClass('view');
         $(this).closest('.edit_body').toggleClass('view');
         var main_height = $('.main').outerHeight(true);
-        mainHeight(main_height);
+        //mainHeight(main_height);
     });
 
     $('.edit_cancel').click(function () {
@@ -366,7 +319,7 @@ $(function () {
 
      loadFruitList(fruitAjax, mainHeight);*/
     //一般时候
-    function fruit(callback) {
+    function fruit() {
 
         //pages
         if ($('.fruit_ul').is(":visible")) {
@@ -385,9 +338,7 @@ $(function () {
             shoppingNavH = $('nav').height();
         }
 
-        // console.log(" $(window).height() = " + $(window).height());
-        // console.log(" $('.shopping_car') = " + $('.shopping_car').height());
-        // console.log("$('.top').height() = " +$('.top').height());
+
         if($(window).height() > 1000){
             $('.shopping_car').css({'height': $(window).height() - $('.top').height() - shoppingNavH - $('.foot_bottom_simple').height() + "px"});
         }else{
@@ -400,15 +351,15 @@ $(function () {
         var main_height =$('.shopping_car').outerHeight(true) || $('.main').outerHeight(true);
 
         // console.log("main_height + " + main_height);
-        callback && callback(main_height);
+        //callback && callback(main_height);
     }
 
-    fruit(mainHeight);
+    fruit();
 
 
-    $(window).resize(function () {
+   /* $(window).resize(function () {
         fruit(mainHeight);
-    });
+    });*/
 
     /*  tab  */
     $('.tab').each(function () {
@@ -433,9 +384,7 @@ $(function () {
                 // console.log('.li2');
                 $('.li_pages').liPages();
             }
-            $('.fruit_images').ulHeight(fruitLi_height,fruitUl_height);
 
-            setMainHeight();
 
         });
     });
@@ -637,7 +586,6 @@ $(function () {
                     var img = $('<div class="img_box"><img src="' + imgArr[i] + '"/><span class="remove_img"></span></div>');
                     imgContainer.append(img);
                 }
-                setMainHeight()
             } else {
                 for (var i = 0; i < 5 - img_num; i++) {
                     var imgUrl = window.URL.createObjectURL(file[0].files[i]);
@@ -645,7 +593,6 @@ $(function () {
                     var img = $('<div class="img_box"><img src="' + imgArr[i] + '"/><span class="remove_img"></span></div>');
                     imgContainer.append(img);
                 }
-                setMainHeight();
                 $(this).closest('.img_upload').find('.warning').show();
             }
             $('.remove_img').click(function () {
@@ -659,7 +606,6 @@ $(function () {
                         $this.closest('.img_upload').find('.warning').hide();
                     }
                     $(this).closest('.img_box').remove();
-                    setMainHeight()
                 });
             });
         } else {

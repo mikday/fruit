@@ -679,9 +679,6 @@ p.tittle-line > span.line:last-child {
 }
 
 @media screen and (max-width: 480px) {
-    .content {
-        margin-top: 50px;
-    }
 
     .banner {
         margin-top: 50px;
@@ -984,6 +981,7 @@ span.phone_error {
 }
 
 .login_head > .form_head {
+    width: auto;
     height: 100%;
     background: #f8bd34;
     color: #fff;
@@ -1229,7 +1227,7 @@ span.phone_error {
 }
 
 /*  fresh --  fresh --  fresh --fresh --  fresh --  fresh --  fresh --  fresh --  fresh --  fresh --  fresh --  fresh  */
-.show_img > .most > li:hover > a > .fruit_img {
+.most > li:hover > a > .fruit_img {
     border: 1px solid #f8bd34;
     overflow: hidden;
 }
@@ -3720,8 +3718,8 @@ span.phone_error {
     }
 
     .menu_on {
-        background: url("../img/icon.png") -162px -149px no-repeat;
-        background-size: 600px 189px;
+        background: url("../img/icon.png") -191px -168px no-repeat;
+        background-size: 700px 210px;
     }
 
     .menu_off {
@@ -6168,9 +6166,10 @@ td.order_info_goods > p {
 }
 
 /*  个人中心——基本信息 */
+
 .user .right_content.tab_body {
     min-height: 511px;
-    padding: 0 20px;
+    height: auto;
     box-sizing: border-box;
 }
 
@@ -6185,7 +6184,8 @@ td.order_info_goods > p {
 
 .user_base_body {
     height: auto;
-    width: 100%;
+    width: 94%;
+    padding:0 3%;
     overflow: hidden;
 
 }
@@ -6413,8 +6413,9 @@ td.order_info_goods > p {
 @media screen and (max-width: 480px) {
 
     .user_base_top {
+        width: 100%;
+        padding: 0 3%;
         line-height: 30px;
-        padding: 0 5px;
     }
 
     .change_user_img > a > span {
@@ -6431,6 +6432,11 @@ td.order_info_goods > p {
 
     .base_info {
         padding: 0 5px;
+    }
+
+    .user_base_body {
+        width: 94%;
+        padding: 0 3%;
     }
 
     .leaf34, .leaf35, .leaf36, .leaf37 {
@@ -6561,7 +6567,7 @@ td.order_info_goods > p {
     float: left;
     width: 100px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 5px;
     background: #fff;
     border-radius: 3px;
     border: 1px solid #f8bd34;
@@ -6571,7 +6577,7 @@ td.order_info_goods > p {
 
 .order_middle .goods_des > a > p {
     height: 80px;
-    margin: 20px 0 0 110px;
+    margin: 15px 0 0 110px;
     font-size: 12px;
     line-height: 20px;
     text-align: justify;
@@ -6949,8 +6955,9 @@ li.arrival:before {
 }
 
 .upload_img_view {
+    width: 95%;
     height: auto;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
 }
 
 .fight_type > span, .is_arrival > span, .reason > span, .get_money > span, .explain > span, .upload_evident > span, .upload_img_view > span, .rights_btn > span {
@@ -7157,10 +7164,12 @@ label {
 
 /* 星级评价 */
 .level_comment {
-    height: 120px;
+    height: auto;
     width: 100%;
+    padding: 0 5px;
     margin-top: 20px;
     margin-bottom: 10px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -7244,20 +7253,24 @@ label {
 .level_comment > .comment_level > li:nth-child(3) > ul > li > span {
     height: 30px;
     width: 21px;
-    background: url("../img/icon.png") -5px -70px no-repeat;
-    background-size: 437px 137px;
+    background: url("../img/icon.png") -5px -68px no-repeat;
+    background-size: 423px 133px;
 }
 
 .level_comment > .comment_level > li:nth-child(3) > ul > li.active > span {
     height: 30px;
     width: 21px;
-    background: url("../img/icon.png") -33px -70px no-repeat;
-    background-size: 437px 137px;
+    background: url("../img/icon.png") -32px -68px no-repeat;
+    background-size: 423px 133px;
 }
 
 .push_comment > a {
     width: 120px;
-    margin: 45px auto 0 auto;
+    margin: 45px auto 10px auto;
+}
+
+.input_group.img_upload {
+    margin-left: 5px;
 }
 
 /* 售后进程 */
@@ -7490,7 +7503,7 @@ label {
         display: inline-block;
         height: 30px;
         width: auto;
-        padding: 0 5px;
+        padding: 0 10px;
     }
 
     .order_middle > .order_operate > a {
@@ -7690,29 +7703,23 @@ label {
 }
 
 @media screen and (max-width: 480px) {
+
+    /*我的订单*/
+    .order_top > .right > li > a {
+        padding:0 8px;
+    }
     .user .right_content.tab_body {
         padding: 0;
     }
 
     .inline_tab .tab_head > li {
-        height: 40px;
         width: auto;
-        min-width: 60px;
+        min-width: 40px;
         padding: 0 8px;
-        line-height: 40px;
-        font-size: 12px;
     }
 
-    .order_top > .left > span {
-        font-size: 10px;
-        -moz-transform: scale(0.84);
-
-    }
-
-    .order_top > .right > li {
-        font-size: 10px;
-        -moz-transform: scale(0.84);
-
+    .order_top > .left {
+        display: none;
     }
 
     /*  物流信息 */
@@ -7880,14 +7887,9 @@ label {
 }
 
 @media screen and (max-width: 380px) {
-    .user .right_content.tab_body {
-        padding: 0 5px;
-    }
 
     .inline_tab .tab_head > li {
         padding: 0 5px;
-        font-size: 9px;
-        -moz-transform: scale(0.75);
     }
 
     .order_top {
@@ -7904,11 +7906,6 @@ label {
         margin-right: 0;
     }
 
-    .order_top > .right > li {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-
-    }
 
     /*  订单内部*/
     /**/
@@ -7935,7 +7932,9 @@ label {
         line-height: 30px;
         margin-top: 2px;
         background: #fafafa;
+        padding:0 8px;
         text-align: right;
+        box-sizing: border-box;
     }
 
     .order_level > .order_right > .goods_price, .order_level > .order_right > .goods_number {
@@ -7950,20 +7949,6 @@ label {
         line-height: 20px;
     }
 
-    .order_middle > .order_status, .order_middle > .order_operate > a {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-    }
-
-    .order_middle > .order_status > ul > li {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-    }
-
-    .order_middle > .order_level > .order_right > div {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-    }
 
     /******/
     .order_middle .goods_des > a > .goods_img {
@@ -7983,15 +7968,6 @@ label {
 
     /*  */
     /*  底部信息*/
-    .order_bottom > .left > span {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-    }
-
-    .order_bottom > .right {
-        font-size: 9px;
-        -moz-transform: scale(0.75);
-    }
 
     /*  物流信息 */
     .jindu_status > li > span.text {
@@ -8050,6 +8026,12 @@ label {
 }
 
 @media screen and (max-width: 320px) {
+    /* 订单 */
+    .order_status >ul >li,.order_top >ul >li >a,.order_operate >a{
+        font-size:10px;
+        -moz-transform:scale(0.84);
+    }
+
     /*  物流信息 */
     .jindu_status > li > span.text {
         width: 100px;
@@ -8283,10 +8265,14 @@ label {
 
 }
 
+.change_phone .btn_group {
+    width: 180px;
+    margin-top: 15px;
+}
+
 /*  礼物中心 */
 .gifts {
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .my_gift {
@@ -8299,6 +8285,7 @@ label {
 .my_gift > li {
     position: relative;
     display: inline-block;
+    float: left;
     margin-top: 10px;
     margin-left: 10px;
     width: 600px;
@@ -8423,10 +8410,6 @@ label {
         width: 360px;
     }
 
-    .change_password .btn_group {
-        width: 225px;
-    }
-
     /*  礼物中心 */
     .my_gift {
         width: 360px;
@@ -8453,6 +8436,119 @@ label {
         margin-left: 0;
     }
 
+    /*  安全中心 */
+    .change_password > form {
+        width: 300px;
+    }
+
+    .input_group_line {
+        width: 300px;
+    }
+
+    .input_group_line > span, .input_group_line_btn > span:first-child {
+        width: 80px;
+    }
+
+    .input_group_line > input, .input_group_line_btn > input {
+        width: 220px;
+    }
+
+    .input_group_line_btn {
+        width: 300px;
+    }
+
+    .input_group_line_btn > span:last-child {
+
+        padding: 0 5px;
+    }
+
+    .change_phone > ul > li > form {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    /*  安全中心 */
+    .change_password > form {
+        width: 400px;
+        margin: 100px auto 0 auto;
+    }
+
+    .input_group_line {
+        width: 400px;
+        height: 40px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+
+    .input_group_line > span, .input_group_line_btn > span:first-child {
+        display: inline-block;
+        float: left;
+        height: 40px;
+        width: 100px;
+        line-height: 55px;
+        font-weight: 200;
+        text-align: right;
+    }
+
+    .input_group_line > input, .input_group_line_btn > input {
+        display: inline-block;
+        float: left;
+        height: 40px;
+        width: 300px;
+        line-height: 40px;
+        padding: 10px 5px 0 5px;
+        border: none;
+        border-bottom: 1px solid #f8bd34;
+        box-sizing: border-box;
+    }
+
+    .input_group_line_btn {
+        position: relative;
+        width: 400px;
+        height: 40px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+
+    .input_group_line_btn > span:last-child {
+        position: absolute;
+        right: 0;
+    }
+
+    .change_password .btn_group {
+        width: 165px;
+        margin-top: 15px;
+    }
+
+    .change_phone {
+        width: 100%;
+        height: 451px;
+        transition: all 800ms ease-in-out;
+        overflow: hidden;
+    }
+
+    .change_phone > ul {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .change_phone > ul > li {
+        display: block;
+        width: 100%;
+        height: 451px;
+        overflow: hidden;
+
+    }
+
+    .change_phone > ul > li > form {
+        width: 400px;
+        margin: 100px auto 0 auto;
+
+    }
+
 }
 
 /*  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  我的试吃  --  */
@@ -8461,10 +8557,10 @@ label {
 }
 
 .my_try {
-    width: 100%;
+    width: 96%;
     height: auto;
+    margin:10px 2% 0 2%;
     padding: 0 10px;
-    margin-top: 10px;
     border-radius: 3px;
     border: 1px solid #f8bd34;
     box-sizing: border-box;
@@ -8580,6 +8676,8 @@ label {
 .manerge_comment .slided_down_menu {
     width: 160px;
     height: 30px;
+    margin-top: 10px;
+    margin-left: 8px;
 }
 
 .manerge_comment .slided_down_menu > .text {
@@ -8590,6 +8688,7 @@ label {
 
 .manerge_comment .slided_down_menu > .text > span:last-child {
     line-height: 28px;
+    font-size: 20px;
 }
 
 .manerge_comment .slided_down_menu > ul {
@@ -8691,6 +8790,12 @@ label {
 
 .able_to_large {
     cursor: url("../img/search.png"), auto;
+}
+
+/*  我的积分 */
+.my_integral {
+    height: 40px;
+    line-height: 40px;
 }
 
 .myIntegral_list {
@@ -8852,10 +8957,109 @@ label {
     .myIntegral_count {
         font-size: 24px
     }
-    .myIntegral_channel{
-        width:20%;
+
+    .myIntegral_channel {
+        width: 20%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /*  我的积分 */
+    .myIntegral {
+        background: #f5f5f5;
+    }
+
+    .my_integral, .myIntegral > .page_tittle {
+        background: #fff;
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .myIntegral > .page_tittle {
+        margin-top: 2px;
+    }
+
+    .myIntegral > .li_pages {
+        margin-top: 10px;
+    }
+
+    .myIntegral_list {
+        display: block;
+        width: 100%;
+        height: 120px;
+        background: #fff;
+        padding: 5px;
+        margin: 0 auto 10px auto;
+        border-bottom: none;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 0 5px rgba(220, 220, 220, 0.4);
+        -moz-box-shadow: 0 0 5px rgba(220, 220, 220, 0.4);
+        box-shadow: 0 0 5px rgba(220, 220, 220, 0.4);
+        box-sizing: border-box;
+    }
+
+    .myIntegral .page_tittle{
+        border:none;
+    }
+
+    .myIntegral_list > div {
+        height: 90px;
+    }
+
+    .myIntegral_goods_list, .myIntegral_change_time, .myIntegral_count, .myIntegral_channel {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 1px;
+    }
+
+    .myIntegral_goods_list {
+        height: 70px;
+    }
+
+    .myIntegral_goods_list .img {
+        float: left;
+        width: 70px;
+        height: 70px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .myIntegral_goods_list p {
+        height: 70px;
+        margin-left: 70px;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    .myIntegral_change_time {
+        width: auto;
+        float: right;
+    }
+
+    .myIntegral_change_time > span {
+        display: inline-block;
+        float: left;
+        width: auto;
+        padding: 0 8px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .myIntegral_change_time > span:first-child {
+        margin-top: 0;
+    }
+
+    .myIntegral_count, .myIntegral_channel {
+        height: 50px;
+        line-height: 50px;
+        width: auto;
+        float: left;
+        padding: 0 8px;
+    }
+
+}
+/* 积分结束 --  积分结束 --  积分结束 --  积分结束 -- 积分结束 --  积分结束 --  积分结束 --  积分结束 --  积分结束  --  积分结束   */
 
 /*-----*/
 .composite > ul > li > span {
@@ -8889,10 +9093,11 @@ label {
     opacity: 0.6;
 }
 
-/*  我的积分 */
-.my_integral {
-    height: 40px;
-    line-height: 40px;
+@media screen and (max-width: 480px){
+    .myIntegral_list {
+        width: 96%;
+        margin: 0 2% 10px 2%;
+    }
 }
 
 @media screen and (max-width: 1240px) {
@@ -9102,7 +9307,7 @@ label {
     }
 }
 
-/*  我的地址 */
+/*  我的地址开始  --  我的地址开始  --  我的地址开始  --  我的地址开始  --  我的地址开始  --  我的地址开始  --  我的地址开始  --   */
 .myAddress_content {
     width: 90%;
     margin: 0 auto;
@@ -9113,7 +9318,7 @@ label {
     height: 40px;
 }
 
-.add_new_address > span {
+.add_new_address > span, .add_new_address > a {
     display: inline-block;
     line-height: 40px;
     width: auto;
@@ -9127,11 +9332,11 @@ label {
     background-size: 211.5px 66.5px;
 }
 
-.add_new_address > span:last-child {
+.add_new_address > a {
     margin-left: 5px;
 }
 
-/**/
+/*  地址列表  --  地址列表  --  地址列表  --  地址列表  --  地址列表  --  地址列表  --  地址列表  --  地址列表  --  地址列表  --  */
 
 .my_add_list {
     overflow: hidden;
@@ -9139,7 +9344,7 @@ label {
 
 .my_add_list > li {
     height: 80px;
-    padding-top: 20px;
+    padding-top: 10px;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
@@ -9164,6 +9369,7 @@ label {
 .myAdd_operate {
     width: 100%;
     height: 30px;
+    margin-top:20px;
     text-align: right;
 }
 
@@ -9174,7 +9380,7 @@ label {
     line-height: 30px;
 }
 
-.del_add > span:last-child, .edit_add > span:last-child {
+.del_add > a:last-child, .edit_add > a:last-child {
     display: inline-block;
     margin-left: 5px;
 }
@@ -9223,24 +9429,34 @@ label {
     margin: 0 auto;
 }
 
+/*  我的地址响应式  --  我的地址响应式  --  我的地址响应式  --  我的地址响应式  --  我的地址响应式  --  我的地址响应式  --  我的地址响应式  */
+
 @media screen and (max-width: 480px) {
+    /*  我的地址  --  我的地址  --  我的地址  --  我的地址  --  我的地址  --  我的地址  --  我的地址  --  我的地址  --  我的地址  --  */
     .myAddress_content {
         width: 100%;
         overflow: visible;
     }
 
+    .add_new_address {
+        margin-left: 2%;
+    }
+
+    /*  我的地址列表  --  我的地址列表  --  我的地址列表  --  我的地址列表  --  我的地址列表  --  我的地址列表  --  我的地址列表  --*/
     .my_add_list > li {
+        width: 96%;
+        margin: 0 2%;
         padding: 5px;
         height: auto;
-        background: #f5f5f5;
         border-radius: 3px;
-        border: none;
+        border: 1px solid #f8bd34;
         -webkit-box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
         -moz-box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
         box-shadow: 0 0 10px rgba(180, 180, 180, 0.3);
-        overflow: hidden;
         margin-bottom: 20px;
         box-sizing: border-box;
+        overflow: hidden;
+
     }
 
     .name_phone, .accept_add {
@@ -9257,6 +9473,21 @@ label {
         width: 100%;
         height: 30px;
         text-align: right;
+        padding-top: 10px;
+        border-top: 1px solid #f8bd34;
+    }
+
+    .name_phone {
+        padding-top: 10px;
+        width: 98%;
+        margin: 0 1%;
+    }
+
+    .accept_add {
+        width: 98%;
+        margin: 0 1%;
+        padding-bottom: 10px;
+
     }
 
     .myAddress form {
@@ -9286,21 +9517,45 @@ label {
     }
 }
 
+/*  我的地址结束  --  我的地址结束  --  我的地址结束  --  我的地址结束  --  我的地址结束  --  我的地址结束  --  我的地址结束  --  */
+
 /*我的收藏*/
-.my_collection {
+.myCollection > .normal_p {
+    width: 96%;
+    padding: 0 2%;
+}
+
+.myCollection .slided_down_menu {
     display: inline-block;
     float: right;
     width: 140px;
     background: #fff;
-    margin-top: 10px;
+    margin: 5px 2% 0 0;
 }
 
-.my_collection ul {
+.myCollection .slided_down_menu > .text {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+.myCollection .slided_down_menu ul {
+    top: 28px;
     z-index: 2;
 }
 
+.myCollection .slided_down_menu > ul > li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.myCollection .slided_down_menu > .text > span:last-child {
+    font-size: 20px;
+    line-height: 28px;
+}
+
 @media screen and (max-width: 768px) {
-    .my_collection {
+    .myCollection .slided_down_menu {
         margin-left: 10px;
     }
 }
