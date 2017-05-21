@@ -754,7 +754,6 @@ p.tittle-line > span.line:last-child {
         font-size: 10px;
         word-break: keep-all;
         white-space: nowrap;
-        -webkit-transform: scale(0.75);
     }
 
     /* footer_content    */
@@ -769,7 +768,6 @@ p.tittle-line > span.line:last-child {
 
     .footer_content_qrcode > p {
         font-size: 10px;
-        -moz-transform: scale(0.75);
     }
 
     /* footer_bottom */
@@ -793,7 +791,6 @@ p.tittle-line > span.line:last-child {
         height: 30px;
         line-height: 30px;
         font-size: 10px;
-        -moz-transform: scale(0.84);
     }
 
     /*    leaf bg    */
@@ -862,15 +859,14 @@ p.tittle-line > span.line:last-child {
     /* footer */
     .promise > li {
         font-size: 10px;
-        -webkit-transform: scale(0.75);
-
+        /*-webkit-transform: scale(0.75);*/
     }
 
     p.small {
         font-size: 9px;
         word-break: keep-all;
         white-space: nowrap;
-        -webkit-transform: scale(0.75);
+        /*-webkit-transform: scale(0.75);*/
         margin-left: -8px;
     }
 
@@ -886,7 +882,7 @@ p.tittle-line > span.line:last-child {
     /* footer_bottom */
     .foot_bottom > p {
         font-size: 8px;
-        -moz-transform: scale(0.66);
+        /*-webkit-transform: scale(0.66);*/
     }
 
     /*    leaf bg    */
@@ -2704,7 +2700,7 @@ span.phone_error {
 
     .login_head > .other > span > a {
         font-size: 10px;
-        -moz-transform: scale(0.83);
+        -webkit-transform: scale(0.83);
     }
 
     .login_table {
@@ -2742,7 +2738,7 @@ span.phone_error {
         height: 30px;
         line-height: 30px;
         font-size: 10px;
-        -moz-transform: scale(0.75);
+        -webkit-transform: scale(0.75);
         bottom: 0;
     }
 
@@ -2887,6 +2883,7 @@ span.phone_error {
 
     .login_sign p.rights {
         font-size: 10px;
+        /*-webkit-transform: scale(0.84);*/
     }
 
     .login_sign > .logo > a > img {
@@ -2927,7 +2924,7 @@ span.phone_error {
     /* 临时分割线  */
     .login_sign p.rights {
         font-size: 8px;
-        -moz-transform: scale(0.67);
+        /*-webkit-transform: scale(0.67);*/
     }
 
     .leaf8 {
@@ -5719,7 +5716,7 @@ td.order_info_goods > p {
 
     th {
         font-size: 9px;
-        -moz-transform: scale(0.8);
+        /*-webkit-transform: scale(0.8);*/
     }
 
     td.order_info_goods {
@@ -5753,7 +5750,7 @@ td.order_info_goods > p {
         height: 30px;
         line-height: 30px;
         font-size: 10px;
-        -moz-transform: scale(0.83);
+        /*-webkit-transform: scale(0.83);*/
     }
 
     .pay_freight span {
@@ -7089,6 +7086,7 @@ label {
 
 .warning {
     font-size: 10px;
+    /*-webkit-transform: scale(0.84);*/
 }
 
 .fight_type > .warning {
@@ -7756,7 +7754,7 @@ label {
         height: 20px;
         line-height: 20px;
         font-size: 10px;
-        -moz-transform: scale(0.84);
+        /*-webkit-transform: scale(0.84);*/
     }
 
     .jindutiao > .link_step {
@@ -7797,7 +7795,7 @@ label {
         line-height: 20px;
         font-size: 10px;
         text-align: justify;
-        -moz-transform: scale(0.84);
+        /*-webkit-transform: scale(0.84);*/
     }
 
     .jindu_status > li:before {
@@ -7820,27 +7818,10 @@ label {
         width: 190px;
     }
 
-    /*.jindu_status > li > span.text {
-        display:block;
-        float:none;
-        width:95%;
-        line-height:30px;
-        margin:0 auto;
-        font-size:14px;
-        border-bottom:0.5px solid #eee;
-    }
-
-    .jindu_status > li:last-child > span.text {
-        border:none;
-    }
-
-    .jindu_status > li.arrival > span.text {
-        border:none;
-    }*/
     /*  订单详情  */
     .order_detail_content_order .order_top {
         font-size: 10px;
-        -moz-transform: scale(0.84)
+        /*-webkit-transform: scale(0.84)*/
     }
 
     .order_detail_content_add > li {
@@ -7881,7 +7862,7 @@ label {
 
     .fight_type > .warning {
         font-size: 8px;
-        -moz-transform: scale(0.64);
+        /*-webkit-transform: scale(0.64);*/
         margin-right: 0;
     }
 }
@@ -7899,7 +7880,7 @@ label {
     .order_top > .left > span {
         margin-right: 8px;
         font-size: 9px;
-        -moz-transform: scale(0.75);
+        /*-webkit-transform: scale(0.75);*/
     }
 
     .order_top > .left > span:last-child {
@@ -7989,7 +7970,7 @@ label {
         height: 20px;
         line-height: 20px;
         font-size: 10px;
-        -moz-transform: scale(0.84);
+        /*-webkit-transform: scale(0.84);*/
     }
 
     .fight_type > .slided_down_menu ul, .reason > .slided_down_menu ul {
@@ -7998,7 +7979,7 @@ label {
 
     .order_body {
         font-size: 10px;
-        -moz-transform: scale(0.84);
+        /*-webkit-transform: scale(0.84);*/
     }
 
     .rights_btn > a {
@@ -8029,7 +8010,7 @@ label {
     /* 订单 */
     .order_status >ul >li,.order_top >ul >li >a,.order_operate >a{
         font-size:10px;
-        -moz-transform:scale(0.84);
+        -webkit-transform:scale(0.84);
     }
 
     /*  物流信息 */
@@ -8472,25 +8453,18 @@ label {
 
     /*  安全中心 */
     .change_password > form {
-        width: 400px;
-        margin: 100px auto 0 auto;
+        width: 270px;
     }
 
     .input_group_line {
-        width: 400px;
-        height: 40px;
-        margin-top: 15px;
-        overflow: hidden;
+        width:270px;
     }
 
     .input_group_line > span, .input_group_line_btn > span:first-child {
-        display: inline-block;
-        float: left;
-        height: 40px;
-        width: 100px;
-        line-height: 55px;
-        font-weight: 200;
-        text-align: right;
+
+        width: 60px;
+        font-size:10px;
+        -webkit-transform: scale(0.84);
     }
 
     .input_group_line > input, .input_group_line_btn > input {
@@ -8648,6 +8622,11 @@ label {
         letter-spacing: 2px;
         overflow: hidden;
     }
+
+    .my_try_comment > span, .my_try_logistics > span {
+        margin-left: 8px;
+    }
+
 }
 
 /*------我的评论-----------------------我的评论----------------------我的评论------------------------我的评论-------------*/
@@ -8733,6 +8712,7 @@ label {
     letter-spacing: 2px;
     text-align: justify;
     margin: 0;
+    overflow:hidden;
 }
 
 .comment_other_info {

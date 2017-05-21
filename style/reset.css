@@ -194,7 +194,7 @@ p.page_tittle {
         text-align: center;
         color: #fff;
         font-size: 10px;
-        -moz-transform: scale(0.75);
+        -webkit-transform: scale(0.75);
     }
 }
 
@@ -207,7 +207,7 @@ p.page_tittle {
         text-align: center;
         color: #fff;
         font-size: 8px;
-        -moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
     }
 }
 
