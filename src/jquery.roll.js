@@ -1,6 +1,8 @@
 ﻿
 (function ($) {
     var _defaults = {
+        liH:null,
+        liW:null,
         num:3,
         autoPosition:false
     };
@@ -16,12 +18,15 @@
                 $roll_li = $roll_content.find('li'),
                 roll_index = 0,
                 is_left = false,
-                timer = null;
+                timer = null,
+                $roll_li_h = opts.liH || $roll_li.outerHeight(true),
+                $roll_li_w = opts.liW || $roll_li.outerWidth(true);
 
-            console.log("li.height = " +  $roll_li.outerHeight(true));
-            console.log("li.width = " + $roll_li.outerWidth(true));
-            $roll_body.css({"width" : $roll_li.outerWidth(true) * opts.num + "px","height" :$roll_li.outerHeight(true) + "px"});
-            $roll.css({'height': $roll_li.outerHeight(true) + "px"});
+            console.log("$roll_li_h = " + $roll_li_h);
+            console.log("$roll_li_w = " + $roll_li_w);
+
+            $roll_body.css({"width" : $roll_li_w * opts.num + "px","height" :$roll_li_h + "px"});
+            $roll.css({'height': $roll_li_h + "px"});
 
             var p_count = Math.ceil($roll_content.outerWidth() / $roll_body.width());
 
@@ -34,6 +39,11 @@
 
             }
 
+
+            $(window).resize(function(){
+                $roll_li_left.css({"margin-top" : ($roll_body.height() - $roll_li_left.height()) / 2 + "px","padding-left" : 1 + "px","box-sizing" : "border-box"});
+                $roll_li_right.css({"margin-top" : ($roll_body.height() - $roll_li_right.height()) / 2 + "px","padding-right" : 1 + "px","box-sizing" : "border-box"});
+            });
 
 
             $roll_li_left.click(function () {
@@ -79,7 +89,7 @@
                         roll_index--;
                     }
                     set_status();
-                }, 1000);
+                }, 5000);
             }
 
             $roll.hover(function () {

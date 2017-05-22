@@ -112,5 +112,6 @@ body {
 }
 
 .article{
+    height:90%;
     min-width:300px;
 }

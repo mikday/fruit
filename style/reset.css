@@ -326,16 +326,15 @@ p.page_tittle {
     color: #fff;
 }
 
-.link_btn {
-    cursor: pointer;
-}
-
 .link_btn > a {
-    color: #333;
+    cursor: pointer;
+    color: #f8bd34;
 }
 
-.link_btn:hover > a {
-    color: #f8bd34;
+
+
+p.fruit_price > small {
+    margin-left: 5px;
 }
 
 /* 分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  */
@@ -630,10 +629,6 @@ p.page_tittle {
 }
 
 @media screen and (max-width: 480px) {
-    p.fruit_price > small {
-        display: inline-block;
-        margin-left: -8px;
-    }
 
     /* 分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  --  分页  */
     .pages {

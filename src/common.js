@@ -33,67 +33,12 @@ $(function () {
         }
     });
 
-    /* 非正常切换 */
-    $('.myOrder_detail').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.my_order_detail').show();
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="my_order"]').addClass('active');
-        //setMainHeight();
-    });
-    $('.apply_rights').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.my_rights').show();
-        //setMainHeight();
-    });
 
-    $('.go_to_comment').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.comments').show();
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="myComment"]').addClass('active');
-        //setMainHeight();
-    });
-
-    $('.rights_jindu').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.after_sales').show();
-        //setMainHeight();
-    });
-    $('.add_new_address').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.new_address').show();
-        //setMainHeight();
-    });
-
-    $('.edit_add').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.edit_address').show();
-        //setMainHeight();
-    });
-
-    $('.check_comment').click(function () {
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.myComment').show();
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="myComment"]').addClass('active');
-        //setMainHeight();
-    });
     /* input  */
     $('input').focus(function () {
         $(this).attr('placeholder', '');
     });
 
-    /* star */
-    var star = $('.show_img>.fruit_images>li');
-    star.hover(function () {
-        var starH = $(this).find('.img-before').outerHeight();
-        var liW = $(this).find('.img-before>ul>li').width();
-        var liH = $(this).find('.img-before>ul>li').height();
-        var liN = $(this).find('.img-before>ul>li').length;
-        $(this).find('.img-before>ul>li').css({'margin-top': ( starH - liH ) / 2 + 'px'});
-        $(this).find('.img-before>ul').css({'width': liN * liW + 'px'});
-    });
 
     /*  　login&sign location    */
     var l_height = $('.login_sign').height();
@@ -106,7 +51,6 @@ $(function () {
     var top_height = $('.top').height();
 
     /* 非长图定高 */
-
 
 
     var form_height = login_account.outerHeight();
@@ -126,6 +70,12 @@ $(function () {
             'left': $(this).closest('.main').find('.left_menu').outerWidth() + "px",
             'height': w_height - top_height + "px"
         });
+
+        black.bind('click',function(){
+            var bb = $(this).clone();
+            bb.closest('.main').removeClass('menuOn');
+            $(this).remove();
+        });
         $(this).closest('.main').append(black);
         $(this).closest('.menu_toggle').hide();
         $(this).closest('.main').find('.left_menu>.menu_off').show();
@@ -136,9 +86,9 @@ $(function () {
         });
     });
 
+
     $('.menu_off').click(function () {
         $(this).closest('.main').removeClass('menuOn');
-        $(this).closest('.main').append(black);
         var black = $(this).closest('.main').find('.black_bg');
         black.remove();
         $(this).hide();
@@ -146,29 +96,6 @@ $(function () {
         $(window).unbind('scroll');
     });
 
-
-    //编辑
-    //user_info edit
-    $('.edit').click(function () {
-        var editName = $(this).data('edit');
-        $(this).toggleClass('view');
-        $(this).closest('.edit_body').toggleClass('view');
-        var main_height = $('.main').outerHeight(true);
-        //mainHeight(main_height);
-    });
-
-    $('.edit_cancel').click(function () {
-        $(this).closest('.edit_body').addClass('view');
-    });
-
-    $('.change_user_img').click(function () {
-        $(this).closest('.first_view').hide();
-        $(this).closest('.main').find('.edit_head_tab').show();
-    });
-    $('.cancle_edit_head').click(function () {
-        $(this).closest('.main').find('.first_view').show();
-        $(this).closest('.edit_head_tab').hide();
-    });
 
     $('.car_editing').click(function () {
         var done = $(this).closest('.edit_car').find('.car_edit_done');
@@ -223,6 +150,7 @@ $(function () {
         });
     });
 
+
     $('.single_done').click(function () {
         var editing = $(this).closest('.car_body').find('.car_editing');
         var done = $(this).closest('.car_body').find('.car_edit_done');
@@ -236,135 +164,13 @@ $(function () {
         car_li.find('.car_list_li_right').removeClass('editing');
         $(this).removeClass('editing');
     });
-    /*  level comment */
-    function set_level(target) {
-        var ul = target.closest('ul');
-        var index = target.index() + 1;
-        ul.find('li').removeClass('active');
-        for (var i = 0; i < index; i++) {
-            ul.find('li').eq(i).addClass('active');
-        }
-    }
-
-    $('.comment_level > li > ul >li').click(function () {
-        var $this = $(this);
-        set_level($this);
-    });
 
 
-//ajax时用的
-    /*function fruitAjax(fruitImgW, callback) {
-
-     function loginSignLocation(fruit_img_w) {
-     var fruitImg_w = fruit_img_w || fruitImgW;
-
-     var fruitUl = $('.fruit_images');
-     var fruitLi = fruitUl.find('li');
-
-     var fruitImg = fruitLi.find('.fruit_img');
-
-     fruitImg.css({'height': fruitImg_w + "px"});
-
-     var fruitPic = fruitUl.find('li').find('.fruit_img>img');
-     var fruitPicH = fruitPic.height();
-
-     fruitPic.css({'margin-top': (fruitImg_w - fruitPicH) / 2 + "px"});
-     //pages
-     if (fruitUl.outerHeight() > fruitLi.outerHeight(true) * 4) {
-     fruitUl.css({'height': fruitLi.outerHeight(true) * 4 + 'px'});
-
-     $('.normal_p .pages').show();
-
-     } else {
-     fruitUl.css({'height': 'auto'});
-     $('.normal_p .pages').hide();
-     }
-     var main_height = $('.main').height();
-     callback && callback(main_height);
-     }
-
-     loginSignLocation();
-     $(window).resize(function () {
-     var FruitImgW = $('.fruit_img').width();
-     loginSignLocation(FruitImgW);
-     });
-
-     }
-
-
-     function loadFruitList(fruit, main) {
-     var target = $('.fruit_images');//ul
-     $.ajax({
-     type: 'get',
-     url: 'testdata.json',
-     dataType: 'json',
-     success: function (data) {
-     $.each(data.content, function (index, param) {
-     var li = $('<li></li>');
-     var a = $('<a href="goods_detail.html"></a>');
-     var div1 = $('<div class="fruit_img"><img src="' + param.src + '" alt="img"/></div>');
-     var div2 = $('<div class="fruit_span"><p class="fruit_name">柠檬</p><p class="fruit_price text_orange">' + param.price + '<small>' + param.type + '</small></p></div>');
-     a.append(div1);
-     a.append(div2);
-     li.append(a);
-     target.append(li);
-     });
-     var fruitImgW = target.find('li').width();
-
-     fruit && fruit(fruitImgW, main);
-     //pages && pages(arguments);
-     }
-     });
-     }
-
-     loadFruitList(fruitAjax, mainHeight);*/
-    //一般时候
-    function fruit() {
-
-        //pages
-        if ($('.fruit_ul').is(":visible")) {
-            // console.log('.img');
-            $('.fruit_ul').ulHeight();
-        } else if($('.li_pages').is(":visible")){
-            // console.log('.li');
-            $('.li_pages').liPages();
-        }
-
-        /*  购物车 */
-        var shoppingNavH;
-        if($(window).width() < 480){
-            shoppingNavH = 0;
-        }else{
-            shoppingNavH = $('nav').height();
-        }
-
-
-        if($(window).height() > 1000){
-            $('.shopping_car').css({'height': $(window).height() - $('.top').height() - shoppingNavH - $('.foot_bottom_simple').height() + "px"});
-        }else{
-            $('.shopping_car').css({'height': 900 + "px"});
-
-        }
-        $('.car_form').css({'height': $('.shopping_car').height() - $('.car_head').height() - $('.car_operate').height() - $('.car_info').height() + "px"});
-
-
-        var main_height =$('.shopping_car').outerHeight(true) || $('.main').outerHeight(true);
-
-        // console.log("main_height + " + main_height);
-        //callback && callback(main_height);
-    }
-
-    fruit();
-
-
-   /* $(window).resize(function () {
-        fruit(mainHeight);
-    });*/
 
     /*  tab  */
     $('.tab').each(function () {
         $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
-        $(this).find('.tab_tittle').unbind("click").bind("click",function () {
+        $(this).find('.tab_tittle').unbind("click").bind("click", function () {
             var $this = $(this),
                 $value = $this.data("value"),
                 $tabVal = $this.closest('.tab').data("value");
@@ -380,7 +186,7 @@ $(function () {
             if ($('.fruit_ul').is(":visible")) {
                 // console.log('.img1');
                 $('.fruit_ul').ulHeight();
-            } else if($('.li_pages').is(":visible")){
+            } else if ($('.li_pages').is(":visible")) {
                 // console.log('.li2');
                 $('.li_pages').liPages();
             }
@@ -474,14 +280,11 @@ $(function () {
         var check = radio.prop("checked");
 
         if (!check) {
-            $(this).closest('.radio_groups').find('.radio_group').removeClass('active').find('input[type="radio"]').prop('checked', '');
+            $(this).closest('.radio_groups').find('.radio_group').find('input[type="radio"]').prop('checked', '');
             $(this).closest('.radio_groups').find('.radio_group').removeClass('active');
             //
             $(this).find('input[type="radio"]').prop('checked', 'checked');
             $(this).addClass('active');
-        }else{
-            $(this).removeClass('active');
-            $(this).find('input[type="radio"]').prop('checked', '');
         }
     });
 
@@ -602,7 +405,7 @@ $(function () {
                     var upload_img_view = $(this).closest('.upload_img_view');
                     var new_num = $(this).closest('.upload_img_view').find('.img_box').length;
 
-                    if(new_num <= 5){
+                    if (new_num <= 5) {
                         $this.closest('.img_upload').find('.warning').hide();
                     }
                     $(this).closest('.img_box').remove();
@@ -612,39 +415,38 @@ $(function () {
             $(this).closest('.img_upload').find('.warning').show();
         }
 
-
     });
 
 
     /* 登陆提交表单 */
     $('.btn').click(function () {
-            var checkPass = $('.p_pass');
-            var cc = $('.login_account input');
+        var checkPass = $('.p_pass');
+        var cc = $('.login_account input');
 
-            if (!(checkNumber.val() && checkPass.val())) {
-                error_text.show();
-                var textA = [];
-                var text;
-                cc.each(function () {
-                    var $this = $(this);
-                    if (!$this.val()) {
-                        text = $this.parent('div').find('.input_text').text();
-                        textA.push(text).toString();
-                    }
-                    return textA;
-                });
-                error_text.text(textA + "不能为空");
-            } else {
-                error_text.hide();
-                error_text.empty();
-            }
-            /* 提交登陆 */
-            /*var params = $("login_form").serialize();
-             $.post("某个地址", params, function (data, status) {
+        if (!(checkNumber.val() && checkPass.val())) {
+            error_text.show();
+            var textA = [];
+            var text;
+            cc.each(function () {
+                var $this = $(this);
+                if (!$this.val()) {
+                    text = $this.parent('div').find('.input_text').text();
+                    textA.push(text).toString();
+                }
+                return textA;
+            });
+            error_text.text(textA + "不能为空");
+        } else {
+            error_text.hide();
+            error_text.empty();
+        }
+        /* 提交登陆 */
+        /*var params = $("login_form").serialize();
+         $.post("某个地址", params, function (data, status) {
 
-             }, "json");*/
+         }, "json");*/
 
-        });
+    });
 
 
     $(document).keydown(function (event) {
@@ -653,13 +455,6 @@ $(function () {
         }
     });
 
-    /* 提交注册 */
-    $('.sign_btn').click(function () {
-        /*var params = $("#sign_form").serialize();*/
-        /*$.post("某个地址", params, function (data, status) {
-
-         }, "json");*/
-    });
 
 
 });

@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <link rel="stylesheet" type="text/css" href="style/modal.css"/>
     <link rel="stylesheet" type="text/css" href="style/tooltips.css"/>
-    <link rel="stylesheet" type="text/css" href="style/4.2.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="style/long.css"/>
+    <link rel="stylesheet" type="text/css" href="style/4.2.0/css/font-awesome.min.css"/>
+
 
 </head>
 <body>
@@ -31,6 +32,7 @@
             <li class="active"><a href="user.html">个人中心</a></li>
             <li><a href="shopping_car.html">购物车</a></li>
             <li><a href="classify.html">分类</a></li>
+            <li><a href="javascript:void(0)" class="go_to_message">消息中心</a></li>
             <li><a href="gift.html">礼品中心</a></li>
         </ul>
         <div class="top_search">
@@ -1770,7 +1772,7 @@
                     </div>
                 </div>
             </div>
-            <div data-value="message" class="li_pages">
+            <div id="message" data-value="message" class="li_pages">
                 <ul class="my_message_list page_li">
                     <li>
                         <div class="view_pic">
@@ -4006,7 +4008,7 @@
     <div class="leaf leaf38"></div>
 </div>
 <div class="myModal" data-value="message_detail">
-    <div class="myModal_body article">
+    <div class="myModal_body">
         <div class="message_word_img">
             <h2>文章标题</h2>
             <p>
@@ -4054,54 +4056,9 @@
 <script type="text/javascript" src="src/common.js"></script>
 <script type="text/javascript" src="src/createModal.js"></script>
 <script type="text/javascript" src="src/createTips.js"></script>
-<script>
-    $(function(){
-        var number = function () {
-            var Num;
-            var ww = $('.main').width();
-            if (ww >= 1920) {
-                Num = 5;
-            } else if (ww < 1920 && ww >= 1500) {
-                Num = 4;
-            } else if (ww < 1500 && ww >= 1204) {
-                Num = 4;
-            } else if (ww < 1204 && ww >= 900) {
-                Num = 4;
-            } else if (ww < 900 && ww >= 768) {
-                Num = 3;
-            } else if (ww < 768 && ww > 320) {
-                Num = 2;
-            } else if (ww <= 320) {
-                Num = 2;
-            }
-            return Num;
-        }();
+<script type="text/javascript" src="src/user.js"></script>
 
-        $('.footer_prints .roll_img').roll({num: number, autoPosition: true});
 
-        $('.showModel').MyModal({long:true});
-
-        var box = $('.textarea');
-        if (typeof document.webkitHidden == "undefined") {
-            // 非chrome浏览器阻止粘贴
-            box.onpaste = function() {
-                return false;
-            }
-        }
-
-        var pay_back = $('.pay_back_explain');
-        pay_back.toolTips({'text':"<p>如您已经过了维权处理期无法发起退款申请，建议您联系卖家协商处理哦。</p>" +
-                                "<p>如无法协商一致，建议您提供有效凭证，联系淘宝客服处理</p>" +
-                                "<p>如果您确实操作过付款,退款过程中卖家操作了拒绝，且双方无法协商一致,请致电客服0838—9087768</p>"});
-        var large_pic = $('.able_to_large');
-        var options;
-
-        large_pic.toolTips({img:true});
-
-       // attrSrc(large_pic);
-    });
-
-</script>
 </body>
 
 </html>

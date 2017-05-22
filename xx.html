@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css"/>
+    <style>
+        ul {
+            height: auto;
+            width: 100%;
+        }
+
+        ul > li {
+            display: block;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            border-bottom: 2px solid rgba(180, 180, 180, 1);
+            overflow: hidden;
+        }
+
+        ul > li > a {
+            /*relative万年坑(T T),脱离文档流，auto无效*/
+            position: relative;
+            display: block;
+            height: 40px;
+            width: 80px;
+            margin-left: 45%;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            line-height: 40px;
+            margin-top: 30px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 0 8px rgba(120, 120, 120, 0.3);
+            -moz-box-shadow: 0 0 8px rgba(120, 120, 120, 0.3);
+            box-shadow: 0 0 8px rgba(120, 120, 120, 0.3);
+            overflow: hidden;
+        }
+
+        ul > li > a:hover {
+            -webkit-box-shadow: 0 0 5px rgba(120, 120, 120, 0.8);
+            -moz-box-shadow: 0 0 5px rgba(120, 120, 120, 0.8);
+            box-shadow: 0 0 5px rgba(120, 120, 120, 0.8);
+        }
+
+        a.green {
+            background: rgba(21, 183, 85, 1);
+        }
+
+        a.yellow {
+            background: rgba(255, 221, 6, 1);
+        }
+
+        a.pink {
+            background: rgba(255, 131, 183, 1);
+        }
+
+        a.blue {
+            background: rgba(79, 175, 255, 1);
+        }
+
+        a.grey {
+            background: rgba(90, 90, 90, 1);
+        }
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="javascript:void(0)" class="green">Click Me !</a></li>
+    <li><a href="javascript:void(0)" class="yellow">Click Me !</a></li>
+    <li><a href="javascript:void(0)" class="pink">Click Me !</a></li>
+    <li><a href="javascript:void(0)" class="blue">Click Me !</a></li>
+    <li><a href="javascript:void(0)" class="grey">Click Me !</a></li>
+</ul>
+
+<script src="src/jquery.min.js"></script>
+<script src="src/button.js"></script>
+<script>
+    var green = $('.green');
+    var yellow = $('.yellow');
+    var pink = $('.pink');
+    var blue = $('.blue');
+    var grey = $('.grey');
+
+    green.waves({style: false});
+    yellow.waves();
+    pink.waves();
+    blue.waves({style: false});
+    grey.waves();
+</script>
+</body>
+</html>

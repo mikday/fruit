@@ -12,30 +12,31 @@
         this.each(function () {
             var fruitUl = $(this);
             if (fruitUl.is(":visible")) {
-                console.log(fruitUl);
                 /*  main 页面长度 */
+                console.log("ii");
 
-                function ul_height() {
-                    var fruitLi = fruitUl.find('li');
-                    console.log("opts.fruitLi_height " + opts.fruitLi_height);
+                var fruitLi = fruitUl.find('li');
+                fruitUl.css({'height': "auto"});
 
-                    var fruitLi_height = opts.fruitLi_height || fruitLi.outerHeight(true);
-                    var fruitUl_height = opts.fruitUl_height || fruitUl.height();
+                var fruitLi_height = opts.fruitLi_height || fruitLi.outerHeight(true);
+                var fruitUl_height = opts.fruitUl_height || fruitUl.height();
 
-                    console.log("fruitLi_height " + fruitLi_height);
-                    console.log("fruitUl_height " + fruitUl_height);
 
-                    if (fruitUl_height > fruitLi_height * 3) {
-                        fruitUl.css({'height': ( fruitLi_height ) * 3 - 10 + 'px'});
-                        fruitUl.closest('.normal_p').find('.pages').show();
+                if (fruitUl_height > fruitLi_height * 3) {
+                    console.log("ii");
 
-                    } else {
-                        fruitUl.css({'height': 'auto'});
-                        fruitUl.parent('.li_pages').find('.pages').hide();
-                    }
+                    fruitUl.css({'height': fruitLi_height * 3 - 10 + 'px'});
+
+                    fruitUl.closest('.normal_p').find('.pages').show();
+
+
+                } else {
+                    console.log("auto");
+                    fruitUl.css({'height': 'auto'});
+                    fruitUl.parent('.li_pages').find('.pages').hide();
 
                 }
-                ul_height();
+
             }
 
         });

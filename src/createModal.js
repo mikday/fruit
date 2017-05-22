@@ -19,16 +19,21 @@
 
 
                 obj.click(function(){
+                    wH =$(window).height();
                     var key = $(this).data('value');
                     var target = $('.myModal[data-value="'+ key +'"]');
                     var bodyH = target.find('.myModal_body').height();
                     modal.css({'top' : $(window).scrollTop()+ "px"});
                     if(opts.long){
                         target.addClass('long');
-                        $('body').css({'overflow':'hidden'});
+                        target.find('.myModal_body').css({'height':wH*0.8 ,'margin-top' : wH*0.1 + "px"});
+
                     }else{
-                        target.find('.myModal_body').css({'margin-top' : (wH - bodyH) / 2 + "px"});
+                        target.find('.myModal_body').css({'margin-top' : ( wH - bodyH ) / 2 + "px"});
                     }
+
+                    $('body').css({'overflow':'hidden'});
+
                     target.show();
                 });
 
