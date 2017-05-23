@@ -3,6 +3,7 @@
  */
 
 $(function(){
+
     var number = function () {
         var Num;
         var ww = $('.main').width();
@@ -131,14 +132,12 @@ $(function(){
         //setMainHeight();
     });
 
-    $('.go_to_message').click(function () {
-        window.location.href = 'user.html';
-        $(this).closest('.right_content>div').hide();
-        $(this).closest('.right_content').find('div.myComment').show();
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
-        $(this).closest('.main').find('.left_menu').find('.tab_tittle[data-value="myComment"]').addClass('active');
-        //setMainHeight();
-    });
+
+
+
+
+
+
 
 //编辑
 //user_info edit

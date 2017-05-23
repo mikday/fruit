@@ -186,15 +186,20 @@ p.page_tittle {
 }
 
 @media screen and (max-width: 480px) {
+    .foot_bottom_simple{
+        text-align: center;
+    }
     /*  简单模式底部  --  简单模式底部  */
     .foot_bottom_simple > p {
+        width:auto;
         height: 30px;
         line-height: 30px;
         margin-top: 10px;
         text-align: center;
         color: #fff;
         font-size: 10px;
-        -webkit-transform: scale(0.75);
+        white-space: nowrap;
+
     }
 }
 
@@ -207,7 +212,6 @@ p.page_tittle {
         text-align: center;
         color: #fff;
         font-size: 8px;
-        -webkit-transform: scale(0.6);
     }
 }
 
@@ -954,4 +958,22 @@ p.fruit_price > small {
 
 .checkbox.active > span{
         background:#f8bd34;
+}
+
+.go_to_message{
+    position:relative;
+}
+.tips_pot{
+    position:absolute;
+    top:20px;
+    right:2px;
+    height:18px;
+    width:18px;
+    font-size:12px;
+    text-align:center;
+    line-height:18px;
+    color:#fff;
+    background:#f8bd34;
+    border-radius: 50%;
+
 }

@@ -259,7 +259,7 @@ p.tittle-line > span.line:last-child {
 }
 
 .promise {
-    width: 85%;
+    width: 95%;
     height: 120px;
     margin: 0 auto;
     overflow: hidden;
@@ -354,6 +354,7 @@ p.tittle-line > span.line:last-child {
     height: 30px;
     text-align: center;
     line-height: 30px;
+    white-space:nowrap;
 }
 
 /* index_bg */
@@ -740,7 +741,7 @@ p.tittle-line > span.line:last-child {
     .promise > li {
         display: inline-block;
         float: left;
-        height: 40px;
+        height: auto;
         width: 25%;
         margin-top: 30px;
         color: #fff;
@@ -750,9 +751,10 @@ p.tittle-line > span.line:last-child {
     }
 
     p.small {
-        font-size: 10px;
-        word-break: keep-all;
-        white-space: nowrap;
+        height:auto;
+        font-size: 8px;
+        padding:0 5px;
+        box-sizing: border-box;
     }
 
     /* footer_content    */
@@ -789,7 +791,8 @@ p.tittle-line > span.line:last-child {
     .foot_bottom > p {
         height: 30px;
         line-height: 30px;
-        font-size: 10px;
+        font-size: 9px;
+
     }
 
     /*    leaf bg    */
@@ -830,7 +833,7 @@ p.tittle-line > span.line:last-child {
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 320px) {
     /*     p.tittle-line    */
     p.tittle-line > span.text {
         font-size: 12px;
@@ -857,16 +860,8 @@ p.tittle-line > span.line:last-child {
 
     /* footer */
     .promise > li {
-        font-size: 10px;
-        /*-webkit-transform: scale(0.75);*/
-    }
-
-    p.small {
         font-size: 9px;
-        word-break: keep-all;
-        white-space: nowrap;
-        /*-webkit-transform: scale(0.75);*/
-        margin-left: -8px;
+
     }
 
     /* footer_content    */
@@ -881,7 +876,6 @@ p.tittle-line > span.line:last-child {
     /* footer_bottom */
     .foot_bottom > p {
         font-size: 8px;
-        /*-webkit-transform: scale(0.66);*/
     }
 
     /*    leaf bg    */
@@ -2694,7 +2688,6 @@ span.phone_error {
 
     .login_head > .other > span > a {
         font-size: 10px;
-        -webkit-transform: scale(0.83);
     }
 
     .login_table {
@@ -2732,7 +2725,6 @@ span.phone_error {
         height: 30px;
         line-height: 30px;
         font-size: 10px;
-        -webkit-transform: scale(0.75);
         bottom: 0;
     }
 
@@ -2875,11 +2867,6 @@ span.phone_error {
         overflow: hidden;
     }
 
-    .login_sign p.rights {
-        font-size: 10px;
-        /*-webkit-transform: scale(0.84);*/
-    }
-
     .login_sign > .logo > a > img {
         height: 30px;
         margin: 15px 10px 0;
@@ -2918,7 +2905,6 @@ span.phone_error {
     /* 临时分割线  */
     .login_sign p.rights {
         font-size: 8px;
-        /*-webkit-transform: scale(0.67);*/
     }
 
     .leaf8 {
@@ -5710,7 +5696,6 @@ td.order_info_goods > p {
 
     th {
         font-size: 9px;
-        /*-webkit-transform: scale(0.8);*/
     }
 
     td.order_info_goods {
@@ -5744,7 +5729,6 @@ td.order_info_goods > p {
         height: 30px;
         line-height: 30px;
         font-size: 10px;
-        /*-webkit-transform: scale(0.83);*/
     }
 
     .pay_freight span {
@@ -5886,7 +5870,7 @@ td.order_info_goods > p {
 .input_group > span:last-child {
     display: inline-block;
     width: auto;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .input_group > span:last-child > a.btn {
@@ -6175,7 +6159,7 @@ td.order_info_goods > p {
 .user_base_body {
     height: auto;
     width: 94%;
-    padding:0 3%;
+    padding: 0 3%;
     overflow: hidden;
 
 }
@@ -6279,7 +6263,7 @@ td.order_info_goods > p {
 
 .view .view_info {
     display: block !important;
-    height:100%;
+    height: 100%;
 }
 
 .view .input_group .view_info {
@@ -6291,8 +6275,8 @@ td.order_info_goods > p {
     border: none;
 }
 
-.user_info{
-    font-size:18px;
+.user_info {
+    font-size: 18px;
 }
 
 .user_info input.edit_info {
@@ -7084,7 +7068,6 @@ label {
 
 .warning {
     font-size: 10px;
-    /*-webkit-transform: scale(0.84);*/
 }
 
 .fight_type > .warning {
@@ -7702,8 +7685,9 @@ label {
 
     /*我的订单*/
     .order_top > .right > li > a {
-        padding:0 8px;
+        padding: 0 8px;
     }
+
     .user .right_content.tab_body {
         padding: 0;
     }
@@ -7752,7 +7736,6 @@ label {
         height: 20px;
         line-height: 20px;
         font-size: 10px;
-        /*-webkit-transform: scale(0.84);*/
     }
 
     .jindutiao > .link_step {
@@ -7793,7 +7776,6 @@ label {
         line-height: 20px;
         font-size: 10px;
         text-align: justify;
-        /*-webkit-transform: scale(0.84);*/
     }
 
     .jindu_status > li:before {
@@ -7806,7 +7788,7 @@ label {
     }
 
     .jindu_status > li > span.week {
-        display:none;
+        display: none;
     }
 
     .jindu_status > li > span.time {
@@ -7814,13 +7796,12 @@ label {
     }
 
     .jindu_status > li > span.text {
-        width:195px;
+        width: 195px;
     }
 
     /*  订单详情  */
     .order_detail_content_order .order_top {
         font-size: 10px;
-        /*-webkit-transform: scale(0.84)*/
     }
 
     .order_detail_content_add > li {
@@ -7833,9 +7814,8 @@ label {
         font-size: 12px;
     }
 
-
-    .order_middle > .order_status > ul > li{
-        font-size:12px;
+    .order_middle > .order_status > ul > li {
+        font-size: 12px;
     }
 
     /* 申请售后 */
@@ -7866,7 +7846,6 @@ label {
 
     .fight_type > .warning {
         font-size: 8px;
-        /*-webkit-transform: scale(0.64);*/
         margin-right: 0;
     }
 }
@@ -7884,13 +7863,11 @@ label {
     .order_top > .left > span {
         margin-right: 8px;
         font-size: 9px;
-        /*-webkit-transform: scale(0.75);*/
     }
 
     .order_top > .left > span:last-child {
         margin-right: 0;
     }
-
 
     /*  订单内部*/
     /**/
@@ -7917,7 +7894,7 @@ label {
         line-height: 30px;
         margin-top: 2px;
         background: #fafafa;
-        padding:0 8px;
+        padding: 0 8px;
         text-align: right;
         box-sizing: border-box;
     }
@@ -7933,7 +7910,6 @@ label {
         float: none;
         line-height: 20px;
     }
-
 
     /******/
     .order_middle .goods_des > a > .goods_img {
@@ -7953,7 +7929,6 @@ label {
 
     /*  */
     /*  底部信息*/
-
     /*  物流信息 */
     .jindu_status > li > span.text {
         width: 170px;
@@ -7974,7 +7949,6 @@ label {
         height: 20px;
         line-height: 20px;
         font-size: 10px;
-        /*-webkit-transform: scale(0.84);*/
     }
 
     .fight_type > .slided_down_menu ul, .reason > .slided_down_menu ul {
@@ -7983,7 +7957,6 @@ label {
 
     .order_body {
         font-size: 12px;
-        /*-webkit-transform: scale(0.84);*/
     }
 
     .rights_btn > a {
@@ -8012,7 +7985,6 @@ label {
 
 @media screen and (max-width: 320px) {
     /* 订单 */
-
     /*  物流信息 */
     .jindu_status > li > span.text {
         width: 105px;
@@ -8254,7 +8226,7 @@ label {
 /*  礼物中心 */
 .gifts {
     margin-top: 10px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .my_gift {
@@ -8458,18 +8430,17 @@ label {
     }
 
     .input_group_line {
-        width:270px;
+        width: 270px;
     }
 
     .input_group_line > span, .input_group_line_btn > span:first-child {
         width: 60px;
-        font-size:12px;
+        font-size: 12px;
     }
 
     .input_group_line > input, .input_group_line_btn > input {
         width: 210px;
     }
-
 
     .change_phone > ul > li > form {
         width: 270px;
@@ -8490,7 +8461,7 @@ label {
 .my_try {
     width: 96%;
     height: auto;
-    margin:10px 2% 0 2%;
+    margin: 10px 2% 0 2%;
     padding: 0 10px;
     border-radius: 3px;
     border: 1px solid #f8bd34;
@@ -8669,7 +8640,7 @@ label {
     letter-spacing: 2px;
     text-align: justify;
     margin: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .comment_other_info {
@@ -8730,8 +8701,8 @@ label {
 }
 
 /*  我的积分 */
-.myIntegral{
-    padding:0 20px;
+.myIntegral {
+    padding: 0 20px;
     box-sizing: border-box;
 
 }
@@ -8941,8 +8912,8 @@ label {
         box-sizing: border-box;
     }
 
-    .myIntegral .page_tittle{
-        border:none;
+    .myIntegral .page_tittle {
+        border: none;
     }
 
     .myIntegral_list > div {
@@ -8972,7 +8943,7 @@ label {
         height: 75px;
         margin-left: 75px;
         padding: 0 8px;
-        line-height:25px;
+        line-height: 25px;
         box-sizing: border-box;
     }
 
@@ -8985,7 +8956,7 @@ label {
         display: inline-block;
         float: left;
         width: auto;
-        font-size:12px;
+        font-size: 12px;
         padding: 0 5px;
         height: 40px;
         line-height: 40px;
@@ -9004,6 +8975,7 @@ label {
     }
 
 }
+
 /* 积分结束 --  积分结束 --  积分结束 --  积分结束 -- 积分结束 --  积分结束 --  积分结束 --  积分结束 --  积分结束  --  积分结束   */
 
 /*-----*/
@@ -9038,9 +9010,9 @@ label {
     opacity: 0.6;
 }
 
-@media screen and (max-width: 480px){
-    .myIntegral{
-        padding:0;
+@media screen and (max-width: 480px) {
+    .myIntegral {
+        padding: 0;
 
     }
 
@@ -9304,8 +9276,8 @@ label {
 }
 
 .my_address_info {
-    padding:0 10px;
-    box-sizing:border-box;
+    padding: 0 10px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -9321,7 +9293,7 @@ label {
 .myAdd_operate {
     width: 100%;
     height: 30px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .set_as_default, .del_add, .edit_add {

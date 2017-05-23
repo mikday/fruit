@@ -5,6 +5,44 @@
 
 $(function () {
 
+    //区分浏览器，部分版本
+    function myBrowser(){
+        var ua = window.navigator.userAgent;
+        var isIE = window.ActiveXObject != undefined && ua.indexOf("MSIE") != -1;
+        var isFirefox = ua.indexOf("Firefox") != -1;
+        var isOpera = window.opr != undefined;
+        var isChrome = ua.indexOf("Chrome") && window.chrome;
+        var isSafari = ua.indexOf("Safari") != -1 && ua.indexOf("Version") != -1;
+        if (isIE) {
+            return "IE";
+        } else if (isFirefox) {
+            return "Firefox";
+        } else if (isOpera) {
+            return "Opera";
+        } else if (isChrome) {
+            return "Chrome";
+        } else if (isSafari) {
+            return "Safari";
+        } else {
+            return "Unkown";
+        }
+    }
+
+    var cc = myBrowser();
+    console.log("cc = " + cc);
+    if(cc == "Chrome" ){
+        $("head").append("<link>");
+        css = $("head").children(":last");
+        css.attr({
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./style/font10.css"
+        });
+    }
+
+    $.ajaxSetup({
+        cache:false
+    });
 //search
 
     $('.search>input').focus(function () {
@@ -167,9 +205,47 @@ $(function () {
 
 
 
+
+    //其他页面跳转来的
+    var param1 = getParam('data');
+
+    function getParam(paramName) {
+        paramValue = "";
+        isFound = false;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&");
+            i = 0;
+            while (i < arrSource.length && !isFound) {
+                if (arrSource[i].indexOf("=") > 0) {
+                    if (arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase()) {
+                        paramValue = arrSource[i].split("=")[1];
+                        isFound = true;
+                    }
+                }
+                i++;
+            }
+        }
+        return paramValue;
+    }
+
+    console.log('param1 = ' + param1);
+
+    if(param1){
+        console.log('mm');
+
+        $('.user').find('.right_content>div').hide();
+        $('.user').find('.right_content').find('div[class="' + param1 + '"]').show();
+        $('.user').find('.left_menu').find('.tab_tittle').removeClass('active');
+        $('.user').find('.left_menu').find('.tab_tittle[data-value="' + param1 + '"]').addClass('active');
+        $('.user').find('.tab_body>div[data-value="' + param1 + '"]').show();
+
+    }
+
     /*  tab  */
     $('.tab').each(function () {
-        $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
+        if(!param1){
+            $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
+        }
         $(this).find('.tab_tittle').unbind("click").bind("click", function () {
             var $this = $(this),
                 $value = $this.data("value"),
@@ -453,6 +529,15 @@ $(function () {
         if (event.keyCode === 13) { // 按了回车键
             $('.btn').trigger("click");
         }
+    });
+
+
+//消息中心
+
+    $('.go_to_message').bind('click',function(){
+        //在原页面跳转
+        location.href="user.html?data=message";
+
     });
 
 
