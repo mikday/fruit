@@ -527,9 +527,10 @@ $(function () {
 
     $(document).keydown(function (event) {
         if (event.keyCode === 13) { // 按了回车键
-            $('.btn').trigger("click");
+            $('.btn_submit').trigger("click");
         }
     });
+
 
 
 //消息中心

@@ -1,6 +1,6 @@
 (function ($) {
     var _defaults = {
-        style: true
+        light: true
     };
 
     $.fn.waves = function (options) {
@@ -8,14 +8,14 @@
 
         this.each(function () {
             var target = $(this),
-                timer = null,
                 color,
                 wave;
 
-            opts.style ? color = 'rgba(255,255,255,0.6)' : color = 'rgba(150,150,150,0.6)';
-
+            opts.light ? color = 'rgba(255,255,255,0.6)' : color = 'rgba(150,150,150,0.6)';
+            target.css({'position':'relative','overflow' : 'hidden'});
 
             target.click(function (e) {
+
                 var x = e.pageX,
                     y = e.pageY,
                     _height = $(this).height(),
@@ -26,6 +26,7 @@
                 wave = $('<div class="wave"></div>');
                 wave.css({'position' : 'absolute' , 'border-radius' : 50 + "%",'background' : color});
 
+                target.append(wave);
 
                 console.log('x = ' + x);
                 console.log('y = ' + y);
@@ -41,17 +42,15 @@
 
                 var i = 20;//起始大小
 
-                target.append(wave);
-
+                var timer = null;
                 clearTimeout(timer);//very important !
+
                 timer = setInterval(function () {
 
                     if (i >= 20) {
 
                         var l = x - offsetL - i / 2;
                         var t = y - offsetT - i / 2;
-
-                        console.log('l = ' + l);
 
                         wave.css({'left' : l + "px"});
                         wave.css({'top' : t + "px"});
@@ -66,14 +65,17 @@
                     i++;
                 }, 1);
 
+                wave.fadeOut(600,function(){
+                    clearTimeout(timer);
+                    $(this).remove();
 
-                    wave.fadeOut(600,function(){
-                        clearTimeout(timer)
-                        $(this).remove();
-                    });
+                });
 
             });
-            wave.click(function(){
+
+
+
+            $('.wave').click(function(){
                 target.trigger('click');
             });
 

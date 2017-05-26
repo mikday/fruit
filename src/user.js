@@ -3,6 +3,8 @@
  */
 
 $(function(){
+    $('.btn').waves();
+
 
     var number = function () {
         var Num;
