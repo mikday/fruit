@@ -29,7 +29,6 @@ $(function () {
     }
 
     var cc = myBrowser();
-    console.log("cc = " + cc);
     if(cc == "Chrome" ){
         $("head").append("<link>");
         css = $("head").children(":last");
@@ -39,7 +38,6 @@ $(function () {
             href: "./style/font10.css"
         });
     }
-
     $.ajaxSetup({
         cache:false
     });
@@ -96,33 +94,40 @@ $(function () {
 
 
     //left_menu
-    if (w_width < 480) {
-        $('.left_menu').css({"height": w_height - top_height + "px"});
+    if (w_width < 670) {
+        $('.left_menu').css({"height": $(window).height() - top_height + "px"});
+    }
+    if($(window).height() < $('.main').height()){
+        $('.left_menu').css({"height": $('.main').height() - top_height + "px"});
     }
 
     $('.menu_on').click(function () {
         $(this).closest('.main').addClass('menuOn');
-        $(this).closest('.main').find('.left_menu').closest('.main').append(black);
         var black = $('<div class="black_bg"></div>');
+        $(this).closest('.main').find('.left_menu').closest('.main').append(black);
         black.css({
             'left': $(this).closest('.main').find('.left_menu').outerWidth() + "px",
-            'height': w_height - top_height + "px"
+            'height': $(window).height() - top_height + "px"
         });
 
-        black.bind('click',function(){
-            var bb = $(this).clone();
-            bb.closest('.main').removeClass('menuOn');
-            $(this).remove();
-        });
+        if($(window).height() < $(this).closest('.main').height()){
+            black.css({'height': 100 + '%'});
+            $(this).closest('.main').find('.left_menu>.menu_off').css({'height': $(this).closest('.main').height()- $('.top').height() + 'px'});
+
+        }else{
+            $('html').addClass('non_scroll');
+            $('html').css({'height' : $(window).height()});
+            $('body').scroll(function () {
+                $(this).scrollTop(0);
+            });
+            $(this).closest('.main').find('.left_menu>.menu_off').css({'height': $(window).height() - $('.top').height() + 'px'});
+        }
         $(this).closest('.main').append(black);
         $(this).closest('.menu_toggle').hide();
         $(this).closest('.main').find('.left_menu>.menu_off').show();
-        $(this).closest('.main').find('.left_menu>.menu_off').css({'height': w_height - top_height + 'px'});
 
-        $(window).scroll(function () {
-            $(this).scrollTop(0);
-        });
     });
+
 
 
     $('.menu_off').click(function () {
@@ -131,10 +136,15 @@ $(function () {
         black.remove();
         $(this).hide();
         $(this).closest('.main').find('.menu_toggle').show();
-        $(window).unbind('scroll');
+        $('body').unbind('scroll');
+        $('html').removeClass('non_scroll');
+        $('html').css({'height' : 100 + '%' });
+
     });
 
 
+
+    /* 购物车编辑 */
     $('.car_editing').click(function () {
         var done = $(this).closest('.edit_car').find('.car_edit_done');
         var arr = [];
@@ -188,7 +198,6 @@ $(function () {
         });
     });
 
-
     $('.single_done').click(function () {
         var editing = $(this).closest('.car_body').find('.car_editing');
         var done = $(this).closest('.car_body').find('.car_edit_done');
@@ -231,8 +240,6 @@ $(function () {
     console.log('param1 = ' + param1);
 
     if(param1){
-        console.log('mm');
-
         $('.user').find('.right_content>div').hide();
         $('.user').find('.right_content').find('div[class="' + param1 + '"]').show();
         $('.user').find('.left_menu').find('.tab_tittle').removeClass('active');
@@ -247,6 +254,7 @@ $(function () {
             $(this).find('.tab_head>.tab_tittle').eq(0).addClass('active');
         }
         $(this).find('.tab_tittle').unbind("click").bind("click", function () {
+            $(this).closest('body').scroll({'top' :0});
             var $this = $(this),
                 $value = $this.data("value"),
                 $tabVal = $this.closest('.tab').data("value");
@@ -540,6 +548,47 @@ $(function () {
         location.href="user.html?data=message";
 
     });
+
+
+    // resize
+
+    $(window).resize(function(){
+        $('body').scrollTop(0);
+
+       /* $('.left_menu>.menu_off').css({'height': $(window).height() - $('.top').height() + 'px'});
+
+        $('.menu_on').click(function(){
+            $('.left_menu>.menu_off').css({'height': $(window).height() - $('.top').height() + 'px'});
+        });
+*/
+        if ($(window).width() < 670) {
+            $('.left_menu').css({"height": $(window).height() - top_height + "px"});
+        }
+        if ($(window).height()  < $('.main').height()) {
+            $('.left_menu').css({"height": $('.main').outerHeight()+ "px"});
+        }
+
+        if($('.main').hasClass('menuOn')){
+            if($(window).height() < $('.normal').height()){
+                $('body').unbind('scroll');
+                $('html').removeClass('non_scroll');
+                $('html').css({'height' : 100 + '%' });
+                $('.black_bg').css({
+                    'height': 100 + '%'
+                });
+            }else{
+                $('html').addClass('non_scroll');
+                $('html').css({'height' : $(window).height()});
+                $('body').scroll(function () {
+                    $(this).scrollTop(0);
+                });
+            }
+        }else{
+            $('.left_menu>.menu_off').hide();
+        }
+
+    });
+
 
 
 

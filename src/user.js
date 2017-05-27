@@ -5,27 +5,31 @@
 $(function(){
     $('.btn').waves();
 
-
-    var number = function () {
-        var Num;
-        var ww = $('.main').width();
-        if (ww >= 1920) {
-            Num = 5;
-        } else if (ww < 1920 && ww >= 1500) {
-            Num = 4;
-        } else if (ww < 1500 && ww >= 1204) {
-            Num = 4;
-        } else if (ww < 1204 && ww >= 900) {
-            Num = 4;
-        } else if (ww < 900 && ww >= 768) {
-            Num = 3;
-        } else if (ww < 768 && ww > 320) {
-            Num = 2;
-        } else if (ww <= 320) {
-            Num = 2;
-        }
-        return Num;
-    }();
+function num(){
+    var Num;
+    var ww = $('.main').width();
+    if (ww >= 1920) {
+        Num = 5;
+    } else if (ww < 1920 && ww >= 1500) {
+        Num = 4;
+    } else if (ww < 1500 && ww >= 1204) {
+        Num = 4;
+    } else if (ww < 1204 && ww >= 900) {
+        Num = 4;
+    } else if (ww < 900 && ww >= 768) {
+        Num = 3;
+    } else if (ww < 768 && ww >= 600) {
+        Num = 3;
+    } else if (ww < 600 && ww >= 480) {
+        Num = 4;
+    } else if (ww < 480 && ww > 320) {
+        Num = 3;
+    }else if (ww <= 320) {
+        Num = 2;
+    }
+    return Num;
+}
+    var number = num();
 
     var li_height,
         li_width;
@@ -38,32 +42,13 @@ $(function(){
     },10);
 
     $(window).resize(function(){
-        var number = function () {
-            var Num;
-            var ww = $('.main').width();
-            if (ww >= 1920) {
-                Num = 5;
-            } else if (ww < 1920 && ww >= 1500) {
-                Num = 4;
-            } else if (ww < 1500 && ww >= 1204) {
-                Num = 4;
-            } else if (ww < 1204 && ww >= 900) {
-                Num = 4;
-            } else if (ww < 900 && ww >= 768) {
-                Num = 3;
-            } else if (ww < 768 && ww > 320) {
-                Num = 2;
-            } else if (ww <= 320) {
-                Num = 2;
-            }
-            return Num;
-        }();
+        var number2 = num();
 
         setTimeout(function(){
             li_height = $('.footer_prints .roll_img').find('.fruit_images>li').outerHeight(true);
             li_width = $('.footer_prints .roll_img').find('.fruit_images>li').outerWidth(true);
 
-            $('.footer_prints .roll_img').roll({liH:li_height,liW:li_width,num: number, autoPosition: true});
+            $('.footer_prints .roll_img').roll({liH:li_height,liW:li_width,num: number2, autoPosition: true});
         },10);
     });
 
@@ -89,6 +74,7 @@ $(function(){
 
     /* 非正常切换 */
     $('.myOrder_detail').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.my_order_detail').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
@@ -96,12 +82,14 @@ $(function(){
         //setMainHeight();
     });
     $('.apply_rights').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.my_rights').show();
         //setMainHeight();
     });
 
     $('.go_to_comment').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.comments').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');
@@ -110,23 +98,27 @@ $(function(){
     });
 
     $('.rights_jindu').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.after_sales').show();
         //setMainHeight();
     });
     $('.add_new_address').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.new_address').show();
         //setMainHeight();
     });
 
     $('.edit_add').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.edit_address').show();
         //setMainHeight();
     });
 
     $('.check_comment').click(function () {
+        $(this).closest('body').scrollTop(0)
         $(this).closest('.right_content>div').hide();
         $(this).closest('.right_content').find('div.myComment').show();
         $(this).closest('.main').find('.left_menu').find('.tab_tittle').removeClass('active');

@@ -26,6 +26,7 @@
             console.log("$roll_li_w = " + $roll_li_w);
 
             $roll_body.css({"width" : $roll_li_w * opts.num + "px","height" :$roll_li_h + "px"});
+
             $roll.css({'height': $roll_li_h + "px"});
 
             var p_count = Math.ceil($roll_content.outerWidth() / $roll_body.width());
@@ -34,6 +35,7 @@
             $roll_li_right.css({"width" : ($roll.outerWidth(true) - $roll_body.width()) / 2 - 1 + "px"});
 
             if(opts.autoPosition){
+
                 $roll_li_left.css({"margin-top" : ($roll_body.height() - $roll_li_left.height()) / 2 + "px","padding-left" : 1 + "px","box-sizing" : "border-box"});
                 $roll_li_right.css({"margin-top" : ($roll_body.height() - $roll_li_right.height()) / 2 + "px","padding-right" : 1 + "px","box-sizing" : "border-box"});
 

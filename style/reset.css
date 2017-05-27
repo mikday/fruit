@@ -33,6 +33,14 @@ a {
     color: #555;
 }
 
+html.non_scroll{
+    overflow:hidden;
+}
+
+html.non_scroll body{
+    overflow:hidden;
+}
+
 /* common  */
 .top {
     height: 80px;
@@ -929,7 +937,7 @@ p.fruit_price > small {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    z-index: 4;
 }
 
 .fruit_img > img {

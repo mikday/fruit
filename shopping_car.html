@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="style/reset.css"/>
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <link rel="stylesheet" type="text/css" href="style/modal.css"/>
+    <link rel="stylesheet" type="text/css" href="style/long.css"/>
 </head>
 <body>
-<div class="normal normal_p">
+<div class="normal normal_p carts">
     <nav>
         <ul>
             <li><a href="login.html">[登陆]</a></li>
@@ -45,7 +46,7 @@
                 <li class="tab_tittle" data-value="on_sale_goods">降价商品</li>
                 <li class="tab_tittle" data-value="almost_none_goods">库存紧张</li>
             </ul>
-            <div class="tab_body" data-value="car_tab">
+            <div class="tab_body" id="diy_scroll" data-value="car_tab">
                 <div class="car_body" data-value="all_goods">
                     <div class="car_info">
                         <div class="checkbox" data-value="car_checkbox">
@@ -622,18 +623,18 @@
 
             </div>
         </div>
-        <div class="car_operate">
-            <div class="checkbox" data-value="car_checkbox">
-                <span></span>
-                <label><input type="checkbox" value="all" hidden/>全选</label>
-            </div>
-            <div class="car_cost">
-                <span>已选&nbsp;<span class="text_orange sum_num">1</span>&nbsp;件商品</span>
-                <span>合计(不含运费)：<span class="text_orange sum_cost">¥35</span></span>
-                <span class="bg_orange go_pay"><a href="settlement.html">去结算</a></span>
-            </div>
-
+    </div>
+    <div class="car_operate">
+        <div class="checkbox" data-value="car_checkbox">
+            <span></span>
+            <label><input type="checkbox" value="all" hidden/>全选</label>
         </div>
+        <div class="car_cost">
+            <span>已选&nbsp;<span class="text_orange sum_num">1</span>&nbsp;件商品</span>
+            <span>合计(不含运费)：<span class="text_orange sum_cost">¥35</span></span>
+            <span class="bg_orange go_pay"><a href="settlement.html">去结算</a></span>
+        </div>
+
     </div>
     <div class="foot_bottom_simple">
         <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
@@ -648,6 +649,7 @@
 </div>
 <script type="text/javascript" src="src/jquery.min.js"></script>
 <script type="text/javascript" src="src/common.js"></script>
+<script type="text/javascript" src="src/shoppingCar.js"></script>
 <script>
 </script>
 </body>
